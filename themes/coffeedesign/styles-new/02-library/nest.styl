@@ -1,0 +1,137 @@
+nest(ratio, bg, shift = 0, steps = 6)
+  dev        = true
+  class_name = "nest"
+  class_list = '.' + class_name + ' '
+  for step in (1...steps + 1)
+    unless step is 1
+      {class_list += '.' + class_name + ' '}
+    rank = steps - (step - shift)
+    size = (ratio**rank)em
+    {class_list}, {'.' + class_name}-{step}
+      padding size
+      &.sub-short
+        padding-top    (size/2)
+        padding-bottom (size/2)
+      if dev
+        background-color rgba(bg, 20%)
+        // transition all 0.25s ease-in-out
+      rank = steps - ((step + 1) - shift)
+      size = (ratio**rank)em
+      > *
+        margin-top size
+          
+      .grid
+        border-spacing size 0
+        > *
+          margin-top size
+
+nest(1.5, teal, -3)
+// @media (max-width: 800px)
+//   nest(2, green, -3)
+@media (max-width: 640px)
+  nest(1.25, slategray, -5)
+
+[class*="nest"]
+
+  &.sub-no_padding
+    padding 0 !important
+    border-spacing 0 !important
+
+  &.sub-no_v-padding
+    padding-top    0 !important
+    padding-bottom 0 !important
+
+  &.sub-no_h-padding
+    padding-left   0 !important
+    padding-right  0 !important
+
+  &.sub-no_margin,
+  $sub-no_margin
+    margin-top 0 !important
+    > *
+      margin-top 0 !important
+
+  &.sub-top_padding
+    padding-right 0 !important
+    padding-bottom 0 !important
+    padding-left 0 !important
+
+  &.sub-bottom_padding
+    padding-top 0 !important
+    padding-right 0 !important
+    padding-left 0 !important
+    
+
+.sub-full_height
+  height 100%
+
+.sub-collapse
+  width 1px
+
+.sub-full_width
+  width 100%
+
+// GRID WRAPPER - Offsets border-spacing
+
+.grid-wrapper
+  table-layout fixed
+  vertical-align top
+  &.sub-no_space
+    margin-left  0 !important
+    margin-right 0 !important
+    > .grid
+      border-spacing 0 !important
+      > .nest
+        margin-top 0 !important
+  &.sub-auto
+    table-layout auto
+  &.sub-align_middle
+    vertical-align middle
+
+// GRID - creates horizontal layout
+
+.grid
+  display table
+  table-layout fixed
+  vertical-align top
+  width 100%
+
+  > *
+    display table-cell
+    vertical-align inherit
+
+  &.sub-auto
+    table-layout auto
+
+  &.sub-align_middle
+    vertical-align middle
+
+  &.sub-collapse
+    width auto
+
+  &.sub-full_height
+    height 100%
+
+  &.sub-break_small
+    > .grid-row
+      > *
+        @media (max-width: 640px)
+          display block
+          width 100%
+
+// GRID ROW - because table rows create dynamic vertical grids
+
+.grid-row
+  display table-row
+
+  > *
+    display table-cell
+    vertical-align inherit
+
+// GRID COLUMN
+
+.grid-column
+  &.sub-fill
+    width 100%
+  &.sub-collapse
+    width 1px

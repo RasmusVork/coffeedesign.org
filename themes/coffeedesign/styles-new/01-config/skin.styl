@@ -1,0 +1,55 @@
+// SKIN CONFIGURATION
+// To apply a skin to an element, use `@extend $skin-name`.
+// To utilize a skin variant, `@extend $skin-name-variant`.
+
+// SKIN BASE
+// Shared CSS should be placed inside `skin_base` and will be extend by each `skin`.
+// Do not confuse with `defaults`.
+$skin-base
+  border-width      1px
+  border-style      solid
+  background-repeat no-repeat
+  transition        all 0.25s ease-in-out
+  // background-image: linear-gradient(rgba(white, 0.2), rgba(black, 0.1))
+  // background-image  linear-gradient(rgba(white, 0), rgba(black, 0.05))
+
+skins = {
+
+  // SKIN DEFAULT
+  // Default skin configuration options are placed in `skin_default`.
+  // Unless specified on a specific `skin`, these options are used.
+  default: {
+    color_base: whitesmoke
+    color_adjust: 0
+    border_adjust: -10
+    text_adjust: -40
+
+    // DEFAULT VARIANTS
+    variants: {
+      light: {
+        color_adjust: 40
+      }
+      dark: {
+        color_adjust: -5
+        text_adjust: 40
+      }
+    }
+
+  }
+
+  // SKINS
+  primary: {
+    color_base: orange
+  }
+  secondary: {
+    color_base: #333
+  }
+  tertiary: {
+    variants: {
+      dark: {
+        text_adjust: -40
+      }
+    }
+  }
+
+}

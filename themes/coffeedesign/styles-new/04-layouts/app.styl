@@ -1,0 +1,99 @@
+// break-small     = 640px
+
+// max-small = "(max-width: " + break-small + ")"
+// min-small = "(min-width: " + break-small + ")"
+// sidebar_width   = 17em
+
+// html
+//   position fixed
+//   width 100%
+//   height 100%
+
+body
+  margin 0
+  // height 100%
+  // width 100%
+  // position fixed
+  // overflow hidden
+
+// $app-sidebar-wrapper
+//   width sidebar_width
+
+// $app-sidebar
+//   @extend $app-sidebar-wrapper
+//   height 100%
+//   @media max-small
+//     position absolute
+//     height auto
+//     top 0
+//     bottom 0
+
+// $app-main
+//   @media max-small
+//     width 100%
+
+// .app
+//   position absolute
+//   top 0
+//   right 0
+//   bottom 0
+//   left 0
+//   overflow hidden
+//   @media max-small
+//     left (sidebar_width * -1)
+
+//   &.state-open
+//     @media max-small
+//       transform translateX(sidebar_width)
+
+// .app-titlebar
+//   null
+
+// .app-titlebar-sidebar-wrapper
+//   @extend $app-sidebar-wrapper
+//   @media min-small
+//     width 0
+
+// .app-titlebar-sidebar
+//   @extend $app-sidebar
+
+// .app-titlebar-main
+//   @extend $app-main
+
+// .app-body
+//   height 100%
+
+// .app-body-sidebar-wrapper
+//   @extend $app-sidebar-wrapper
+
+// .app-body-sidebar
+//   @extend $app-sidebar
+
+// .app-body-main
+//   @extend $app-main
+//   background white
+//   height 100%
+
+// .app-body-main-flash
+//   position absolute
+//   width 100%
+//   z-index 2
+
+// .app-body-main-content
+//   null
+
+// // Scrollable Panes
+
+// .scroll
+//   position relative
+//   width 100%
+//   height 100%
+
+// .scroll-pane
+//   position absolute
+//   top 0
+//   right 0
+//   bottom 0
+//   left 0
+//   overflow auto
+//   -webkit-overflow-scrolling touch
