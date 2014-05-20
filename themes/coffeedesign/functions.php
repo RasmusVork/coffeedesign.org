@@ -1,10 +1,13 @@
 <?php
-// Show posts of 'post', 'page' and 'movie' post types on home page
-// add_action( 'pre_get_posts', 'add_my_post_types_to_query' );
 
-// function add_my_post_types_to_query( $query ) {
-//   if ( is_home() && $query->is_main_query() )
-//     $query->set( 'post_type', array( 'post', 'page', 'sermon' ) );
-//   return $query;
-// }
+// Thumbnail support
+add_theme_support( 'post-thumbnails' );
+
+// SVG support
+function cc_mime_types( $mimes ){
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter( 'upload_mimes', 'cc_mime_types' );
+
 ?>

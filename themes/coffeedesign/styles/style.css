@@ -131,7 +131,7 @@ input,
 .organizer-info,
 .organizer-info-services,
 .sponsors,
-.layout-events .event,
+.event,
 .layout-footer-column {
   margin-top: 1.5em;
 }
@@ -146,7 +146,7 @@ input.text,
 .organizer-info.text,
 .organizer-info-services.text,
 .sponsors.text,
-.layout-events .event.text,
+.event.text,
 .layout-footer-column.text,
 p,
 hr {
@@ -163,7 +163,7 @@ input.double,
 .organizer-info.double,
 .organizer-info-services.double,
 .sponsors.double,
-.layout-events .event.double,
+.event.double,
 .layout-footer-column.double,
 .organizer,
 .layout-events {
@@ -180,7 +180,7 @@ input:first-child,
 .organizer-info:first-child,
 .organizer-info-services:first-child,
 .sponsors:first-child,
-.layout-events .event:first-child,
+.event:first-child,
 .layout-footer-column:first-child {
   margin-top: 0;
 }
@@ -264,20 +264,14 @@ a {
 
 .event {
   position: relative;
-}
-
-.event.sub-primary {
+  color: #444;
   text-align: left;
 }
 
-@media (max-width: 59em) {
-  .event.sub-primary {
-    text-align: center;
+@media (min-width: 59em) {
+  .event.sub-secondary {
+    width: 22.5em;
   }
-}
-
-.event.sub-secondary {
-  width: 22.5em;
 }
 
 .event.sub-secondary .event-content-photo {
@@ -319,6 +313,7 @@ a {
 @media (max-width: 36em) {
   .event-content-photo {
     padding-top: 1em;
+    text-align: center;
   }
 }
 
@@ -884,6 +879,15 @@ span.heart {
   font-size: 1.2em;
 }
 
+a {
+  color: #2e4599;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .waypoint {
   position: relative;
   top: -5em;
@@ -933,6 +937,10 @@ span.heart {
   text-align: center;
 }
 
+.layout-content.sub-align_left {
+  text-align: left;
+}
+
 .layout-content.sub-wide {
   max-width: 75em;
 }
@@ -949,7 +957,7 @@ span.heart {
 }
 
 @media (max-width: 52.5em) {
-  .layout-events .event {
+  .event {
     display: block;
     width: 100%;
   }

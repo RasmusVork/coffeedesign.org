@@ -1,3 +1,5 @@
+    </main>
+
     <footer class="layout-footer">
       <div class="layout-footer-column">
         <p>

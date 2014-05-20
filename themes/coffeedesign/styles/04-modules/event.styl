@@ -1,13 +1,11 @@
 .event
   position relative
-
-  &.sub-primary
-    text-align left
-    @media (max-width: 59em)
-      text-align center
+  color black
+  text-align left
 
   &.sub-secondary
-    width unit(15)
+    @media (min-width: 59em)
+      width unit(15)
 
     .event-content-photo
       display none !important
@@ -37,6 +35,7 @@
   padding-top unit(0.35)
   @media max-small
     padding-top 1em
+    text-align center
   @media (max-width: 59em)
     width 100%
     .photo
