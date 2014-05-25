@@ -262,6 +262,12 @@ a {
   background: transparent;
 }
 
+.button.sub-outline {
+  color: #2e4599;
+  background: transparent;
+  border: 2px solid;
+}
+
 .event {
   position: relative;
   color: #444;
