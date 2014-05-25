@@ -24,13 +24,13 @@
       <hr class="sub-small"/>
       <p class="event-date">
         <strong><?php the_date('l, F j, Y'); ?></strong><br>
-        <?php if( location_name ) : ?>
+        <?php if(get_field(location_name)) : ?>
           <a href="http://maps.apple.com/?q=<?php the_field('location_url', $term); ?>">
             <?php the_field('location_name', $term); ?>
           </a>
         <?php endif; ?>
       </p>
-      <?php if( registration_link != '/') : ?>
+      <?php if(get_field("registration_link")) : ?>
         <p>
           <a href="<?php the_field('registration_link', $term); ?>" class="button">Register</a>
         </p>
