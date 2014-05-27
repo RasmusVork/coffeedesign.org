@@ -245,6 +245,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   background: #2e4599;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -274,14 +275,16 @@ a {
   text-align: left;
 }
 
-@media (min-width: 59em) {
-  .event.sub-secondary {
-    width: 22.5em;
+@media (max-width: 52.5em) {
+  .event {
+    text-align: center;
   }
 }
 
-.event.sub-secondary .event-content-photo {
-  display: none !important;
+@media (min-width: 52.5em) {
+  .event.sub-next {
+    width: 60%;
+  }
 }
 
 .event-ribbon {

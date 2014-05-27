@@ -13,16 +13,16 @@
     <h2>Upcoming Events</h2>
     <hr/>
     <p class="sub_heading">A free event, the last Friday of every month, with coffee and breakfast. <br class="sub-large"/>What a way to kick off your morning.</p>
+    <p>
+      <a class="button sub-outline" href="events">See all events</a>
+    </p>
     <div class="layout-events">
       <?php query_posts(array ( 'post_type' => 'event', 'posts_per_page' => 2, 'post_status' => 'future', 'order' => 'ASC' ));
       include "partials/event.php"; ?>
     </div>
-    <p>
-      <a class="button sub-outline" href="events">All events</a>
-    </p>
   </div>
 </section>
-<div id="about" class="waypoint">       </div>
+<div id="about" class="waypoint"></div>
 <section class="layout-content-wrapper sub-background sub-about">
   <div class="layout-content">
     <h2>About</h2>
