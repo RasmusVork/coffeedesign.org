@@ -523,6 +523,17 @@ input[type="submit"] {
   display: none;
 }
 
+.footer-logo-flywheel {
+  display: inline-block;
+  width: 8em;
+  vertical-align: middle;
+}
+
+.footer-logo-flywheel img {
+  width: 100%;
+  height: auto;
+}
+
 .navigation {
   display: inline-table;
   table-layout: normal;
