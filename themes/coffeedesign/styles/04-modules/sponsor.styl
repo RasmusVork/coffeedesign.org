@@ -1,11 +1,32 @@
 .sponsors
   @extend $vertical_spacing
 
+.sponsors-tier
+  @extend $vertical_spacing
+  
+  &.sub-espresso
+    .sponsor
+      width (100/4)%
+      @media max-small
+        width 75%
+
+  &.sub-french_press
+    .sponsor
+      width (100/6)%
+      @media max-small
+        width (100/2)%
+
+  &.sub-pour_over
+    .sponsor
+      width (100/8)%
+      @media max-small
+        width (100/3)%
+
 .sponsor
   @extend $transition.sub-fast
   display inline-block
   width 15em
-  padding 1em
+  padding 1em 3%
   opacity 0.25
   vertical-align middle
   &:hover
@@ -14,3 +35,4 @@
 
   img
     width 100%
+    height auto
