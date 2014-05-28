@@ -32,17 +32,39 @@
 </section>
 <div id="sponsors" class="waypoint"></div>
 <section class="layout-content-wrapper">
-  <div class="layout-content">
+  <div class="layout-content sub-wide">
     <h2>A Huge Thanks</h2>
     <hr/>
     <p class="sub_heading">Coffee & Design doesn't happen without these fine folks.</p>
     <div class="sponsors">
-      <?php query_posts(array ( 'post_type' => 'sponsor', 'order' => 'DSC' ));
-        if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <a href="<?php the_field('sponsor_url', $term); ?>" class="sponsor">
-          <?php the_post_thumbnail(); ?>
-        </a>
-      <?php endwhile; endif; ?>
+      <!-- Espresso -->
+      <div class="sponsors-tier sub-espresso">
+        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'espresso', 'order' => 'DSC' ));
+          if (have_posts()) : while (have_posts()) : the_post();
+            include 'partials/sponsor.php'; 
+          endwhile; endif; ?>
+      </div>
+      <!-- French Press -->
+      <div class="sponsors-tier sub-french_press">
+        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'french_press', 'order' => 'DSC' ));
+          if (have_posts()) : while (have_posts()) : the_post();
+            include 'partials/sponsor.php'; 
+          endwhile; endif; ?>
+      </div>
+      <!-- Pour Over -->
+      <div class="sponsors-tier sub-pour_over">
+        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'pour_over', 'order' => 'DSC' ));
+          if (have_posts()) : while (have_posts()) : the_post();
+            include 'partials/sponsor.php'; 
+          endwhile; endif; ?>
+      </div>
+      <!-- Home Brew -->
+      <div class="sponsors-tier sub-home_brew">
+        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'home_brew', 'order' => 'DSC' ));
+          if (have_posts()) : while (have_posts()) : the_post();
+            include 'partials/sponsor.php'; 
+          endwhile; endif; ?>
+      </div>
     </div>
     <p><a href="mailto:hello@coffeedesign.org?subject=Coffee%20%26%20Design%20—%20Sponsorship%20Inquiry">Be a Sponsor</a></p>
   </div>

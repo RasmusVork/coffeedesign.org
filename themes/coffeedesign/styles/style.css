@@ -131,6 +131,7 @@ input,
 .organizer-info,
 .organizer-info-services,
 .sponsors,
+.sponsors-tier,
 .event,
 .layout-footer-column {
   margin-top: 1.5em;
@@ -146,6 +147,7 @@ input.text,
 .organizer-info.text,
 .organizer-info-services.text,
 .sponsors.text,
+.sponsors-tier.text,
 .event.text,
 .layout-footer-column.text,
 p,
@@ -163,6 +165,7 @@ input.double,
 .organizer-info.double,
 .organizer-info-services.double,
 .sponsors.double,
+.sponsors-tier.double,
 .event.double,
 .layout-footer-column.double,
 .organizer,
@@ -180,6 +183,7 @@ input:first-child,
 .organizer-info:first-child,
 .organizer-info-services:first-child,
 .sponsors:first-child,
+.sponsors-tier:first-child,
 .event:first-child,
 .layout-footer-column:first-child {
   margin-top: 0;
@@ -737,10 +741,40 @@ input[type="submit"] {
   border-right-color: #328f82;
 }
 
+.sponsors-tier.sub-espresso .sponsor {
+  width: 25%;
+}
+
+@media (max-width: 36em) {
+  .sponsors-tier.sub-espresso .sponsor {
+    width: 75%;
+  }
+}
+
+.sponsors-tier.sub-french_press .sponsor {
+  width: 16.666666666666668%;
+}
+
+@media (max-width: 36em) {
+  .sponsors-tier.sub-french_press .sponsor {
+    width: 50%;
+  }
+}
+
+.sponsors-tier.sub-pour_over .sponsor {
+  width: 12.5%;
+}
+
+@media (max-width: 36em) {
+  .sponsors-tier.sub-pour_over .sponsor {
+    width: 33.333333333333336%;
+  }
+}
+
 .sponsor {
   display: inline-block;
   width: 15em;
-  padding: 1em;
+  padding: 1em 3%;
   opacity: .25;
   vertical-align: middle;
 }
@@ -752,6 +786,7 @@ input[type="submit"] {
 
 .sponsor img {
   width: 100%;
+  height: auto;
 }
 
 body {

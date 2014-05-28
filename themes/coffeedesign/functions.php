@@ -84,6 +84,35 @@ register_post_type('sponsor', array(
 )
 ) ); }
 
+// Sponsorship Tiers Taxonomy
+
+add_action('init', 'cptui_register_my_taxes_tiers');
+function cptui_register_my_taxes_tiers() {
+register_taxonomy( 'tiers',array (
+  0 => 'sponsor',
+),
+array( 'hierarchical' => false,
+  'label' => 'Tiers',
+  'show_ui' => true,
+  'query_var' => true,
+  'show_admin_column' => false,
+  'labels' => array (
+  'search_items' => 'Tier',
+  'popular_items' => '',
+  'all_items' => '',
+  'parent_item' => '',
+  'parent_item_colon' => '',
+  'edit_item' => '',
+  'update_item' => '',
+  'add_new_item' => '',
+  'new_item_name' => '',
+  'separate_items_with_commas' => '',
+  'add_or_remove_items' => '',
+  'choose_from_most_used' => '',
+)
+) ); 
+}
+
 // Organizer Post Type
 
 add_action('init', 'cptui_register_my_cpt_organizer');
