@@ -4,7 +4,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <title><?php echo get_bloginfo('name'); ?><?php wp_title(); ?></title>
     <meta name="description" content="Coffee &amp; Design is a free, monthly event to connect design professionals in Kansas City.">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/images/favicon.png">
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/styles/style.css" type="text/css" media="screen" />
