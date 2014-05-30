@@ -39,28 +39,28 @@
     <div class="sponsors">
       <!-- Espresso -->
       <div class="sponsors-tier sub-espresso">
-        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'espresso', 'order' => 'DSC' ));
+        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'espresso', 'order' => 'ASC' ));
           if (have_posts()) : while (have_posts()) : the_post();
             include 'partials/sponsor.php'; 
           endwhile; endif; ?>
       </div>
       <!-- French Press -->
       <div class="sponsors-tier sub-french_press">
-        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'french_press', 'order' => 'DSC' ));
+        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'french_press', 'order' => 'ASC' ));
           if (have_posts()) : while (have_posts()) : the_post();
             include 'partials/sponsor.php'; 
           endwhile; endif; ?>
       </div>
       <!-- Pour Over -->
       <div class="sponsors-tier sub-pour_over">
-        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'pour_over', 'order' => 'DSC' ));
+        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'pour_over', 'order' => 'ASC' ));
           if (have_posts()) : while (have_posts()) : the_post();
             include 'partials/sponsor.php'; 
           endwhile; endif; ?>
       </div>
       <!-- Home Brew -->
       <div class="sponsors-tier sub-home_brew">
-        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'home_brew', 'order' => 'DSC' ));
+        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'home_brew', 'order' => 'ASC' ));
           if (have_posts()) : while (have_posts()) : the_post();
             include 'partials/sponsor.php'; 
           endwhile; endif; ?>
