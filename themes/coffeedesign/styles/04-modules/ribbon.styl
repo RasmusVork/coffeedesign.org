@@ -15,6 +15,7 @@
     content ""
     display block
     position absolute
+    z-index 1
     right - unit(1.75/2)
     border-width unit(1.75/2)
     border-style solid
@@ -35,14 +36,20 @@
   padding 0 unit(1)
   z-index 1
 
-  &:before
-    content ""
-    display block
-    z-index -1
+.ribbon-shadow
+  z-index -1
+  position absolute
+  left - unit(1.75/4)
+  bottom - unit(1.75/4)
+  border-width unit(1.75/4)
+  border-style solid
+  border-color transparent
+  border-right-color darken(teal, 10)
+  &:after
+    content ''
     position absolute
-    left - unit(1.75/4)
-    bottom - unit(1.75/4)
-    border-width unit(1.75/4)
-    border-style solid
-    border-color transparent
-    border-right-color darken(teal, 10)
+    display block
+    width 1em
+    height 1em
+    top -1em
+    background teal
