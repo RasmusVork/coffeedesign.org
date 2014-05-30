@@ -1,3 +1,29 @@
+@keyframes event
+  0%
+    opacity 0
+    transform translateY(25%) scale(1.01)
+  50%
+    opacity 0
+  100%
+    opacity 1
+    transform translateY(0%) scale(1.0)
+
+@keyframes back
+  0%
+    opacity 0
+  100%
+    opacity 1
+
+.button.sub-back
+  opacity 1
+  animation back 0.5s ease-in-out
+
+.single-event
+  .event
+    opacity 1
+    transform translateY(0%)
+    animation event 0.5s ease-out
+
 .event
   position relative
   color black
@@ -21,7 +47,7 @@
   background white
   box-shadow 0 1px 4px rgba(black, 0.25)
   @media max-small
-    border-spacing unit(0.66)
+    border-spacing unit(1.5)
 
   > *
     @extend $vertical_spacing

@@ -1,8 +1,12 @@
 <?php if (have_posts()) : while (have_posts()) : the_post();
-$post_date = get_the_date('Y-m-d');
-$today     = date('Y-m-d');
+$post_date  = get_the_date('Y-m-d');
+$today      = date('Y-m-d');
 $post_month = get_the_date('Y-m');
-$this_month = date('Y-m'); ?>
+$this_month = date('Y-m');?>
+
+<?php if(is_single()) : ?>
+  <small><a class="button sub-outline sub-back" href="<?php print $_SERVER['HTTP_REFERER'];?>">⬅ Events</a></small>
+<?php endif; ?>
 
 <div class="event <?php echo (is_archive() && $post_date >= $today && $wp_query->current_post == 0 ? "sub-next" : ""); ?>">
   <?php if($post_date >= $today && $wp_query->current_post == 0 ) : ?>
@@ -16,15 +20,21 @@ $this_month = date('Y-m'); ?>
   <?php endif; ?>
 
   <div class="event-content">
-  <?php if($post_date <= $today || $wp_query->current_post == 0 ) : ?>
+    <?php if($post_date <= $today || $wp_query->current_post == 0) : if(has_post_thumbnail()) : ?>
     <div class="event-content-photo">
       <div style="background-image: url('<?php echo wp_get_attachment_thumb_url( get_post_thumbnail_id( $post->ID ) ); ?>')" class="photo sub-circle">
         <?php the_post_thumbnail(); ?>
       </div>
     </div>
-  <?php endif;?>
+    <?php endif; endif;?>
     <div class="event-content-info">
-      <h3 class="event-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+      
+        <?php if(! is_single()) : ?>
+          <h3 class="event-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <?php else : ?>
+          <h2><?php the_title(); ?></h2>
+        <?php endif; ?>
+      
       <p class="event-date">
         <strong><?php the_date('l, F j, Y'); ?></strong><br>
         <?php if(get_field(location_name)) : ?>
