@@ -248,7 +248,7 @@ a {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
-  text-decoration: none;
+  text-decoration: none !important;
   text-align: center;
   background: #2e4599;
   -webkit-box-shadow: none;
@@ -401,7 +401,7 @@ input[type="submit"] {
   font-style: normal;
   font-variant: normal;
   text-transform: none;
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
 }
 
