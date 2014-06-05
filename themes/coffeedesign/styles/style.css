@@ -82,6 +82,7 @@ fieldset,legend,label,input{font-size:inherit;font:inherit;font-weight:500}
 input[type="submit"]{width:auto;}
 @media (max-width: 36em){input[type="submit"]{width:100%}
 }.icon{border-spacing:.375em 0;margin:0 -.375em;font-weight:700;font-style:normal;font-variant:normal;text-transform:none;text-decoration:none !important;color:inherit;}
+.icon:hover .icon-text{text-decoration:underline}
 .icon + .icon{margin-left:.75em}
 .icon-glyph{color:inherit;vertical-align:middle;}
 .icon-glyph:before{font-family:'coffeedesign';speak:none;display:block;font-size:1.5em;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;text-decoration:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
