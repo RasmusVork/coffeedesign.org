@@ -7,7 +7,6 @@
     <link rel="icon" type="image/png" href="<?php bloginfo('template_directory'); ?>/images/favicon.png">
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/styles/style.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:700|Merriweather:300italic|Lato" />
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta content="initial-scale = 1.0, user-scalable = no, width = device-width, height = device-height" name="viewport">
