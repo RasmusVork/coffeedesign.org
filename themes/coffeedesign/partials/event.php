@@ -1,6 +1,6 @@
 <?php if (have_posts()) : while (have_posts()) : the_post();
-$post_date  = get_the_date('Y-m-d');
-$today      = date('Y-m-d');
+$post_date  = get_the_date('c');
+$today      = current_time( 'c' );
 $post_month = get_the_date('Y-m');
 $this_month = date('Y-m');?>
 
@@ -46,7 +46,9 @@ $this_month = date('Y-m');?>
           <?php endif; ?>
         </p>
         <?php ( is_archive() ? the_excerpt() : the_content() ); ?>
-        <?php if(get_field("registration_link")) : ?>
+        <p>Post Date: <?php echo $post_date; ?>
+        <p>Now: <?php echo $today; ?>
+        <?php if(get_field("registration_link") && $post_date >= $today) : ?>
           <p>
             <a href="<?php the_field('registration_link', $term); ?>" class="button">Register</a>
           </p>
