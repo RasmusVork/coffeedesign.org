@@ -46,8 +46,6 @@ $this_month = date('Y-m');?>
           <?php endif; ?>
         </p>
         <?php ( is_archive() ? the_excerpt() : the_content() ); ?>
-        <p>Post Date: <?php echo $post_date; ?>
-        <p>Now: <?php echo $today; ?>
         <?php if(get_field("registration_link") && $post_date >= $today) : ?>
           <p>
             <a href="<?php the_field('registration_link', $term); ?>" class="button">Register</a>
