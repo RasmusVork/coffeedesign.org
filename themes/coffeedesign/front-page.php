@@ -71,7 +71,7 @@
 </section>
 <section class="layout-content-wrapper sub-dark">
   <div class="layout-content sub-wide">
-    <h3 class="sub_heading">Friends of C&D</h3>
+    <small><h3 class="sub_heading">Friends of C&D</h3></small>
     <div class="sponsors-tier sub-friends_of">
       <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'friends', 'order' => 'ASC' ));
         if (have_posts()) : while (have_posts()) : the_post();
