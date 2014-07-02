@@ -1,36 +1,31 @@
 .organizer
-  @extend $grid
-  @extend $vertical_spacing.double
-  border-spacing unit(1.2) 0
+  display inline-block
+  padding 0 unit(0.5)
+  width 30%
+  @extend $vertical_spacing
+  vertical-align top
   @media max-small
-    display block
-  
-  &:nth-child(odd)
-    direction rtl
-    @media max-small
-      direction ltr
-    .organizer-info
-      text-align right
-      direction ltr
-
+    padding 0
 
 .organizer-avatar
-  width unit(5)
-  padding-top unit(0.25)
-  vertical-align middle
-  @media max-small
-    display inline-block
+  display inline-block
+  width unit(3)
 
 .organizer-info
-  @extend $vertical_spacing
-  text-align left
+  text-align center
   vertical-align middle
+  @extend $vertical_spacing.half
   @media max-small
+    font-size 0.875em
     display block
     text-align center !important
 
 .organizer-info-services
-  @extend $vertical_spacing
+  @extend $vertical_spacing.half
+  font-size 0.875em
+  text-align center
+  @media max-small
+    display none
   .icon-glyph
     @extend $transition.sub-fast
     padding 0.5em
