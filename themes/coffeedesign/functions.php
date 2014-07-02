@@ -2,9 +2,10 @@
 
 // Enqueue scripts and styles
 function coffeedesign_scripts() {
-  wp_enqueue_style( 'style', get_template_directory_uri() . '/styles/style.css' );
-  wp_enqueue_script( 'fitvids', get_template_directory_uri() . '/js/fitvids.js', array(jquery));
-  wp_enqueue_script( 'functions', get_template_directory_uri() . '/js/functions.js', array(jquery));
+  wp_enqueue_style('style', get_template_directory_uri() . '/styles/style.css' );
+  wp_enqueue_script('fitvids', get_template_directory_uri() . '/js/fitvids.js', array(jquery));
+  wp_enqueue_script('functions', get_template_directory_uri() . '/js/functions.js', array(jquery));
+  wp_enqueue_script('google_analytics', get_template_directory_uri() . '/js/analyticstracking.js');
 }
 
 add_action( 'wp_enqueue_scripts', 'coffeedesign_scripts' );
