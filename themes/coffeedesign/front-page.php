@@ -65,8 +65,19 @@
             include 'partials/sponsor.php'; 
           endwhile; endif; ?>
       </div>
+      <p><a href="mailto:hello@coffeedesign.org?subject=Coffee%20%26%20Design%20—%20Sponsorship%20Inquiry">Be a Sponsor</a></p>
     </div>
-    <p><a href="mailto:hello@coffeedesign.org?subject=Coffee%20%26%20Design%20—%20Sponsorship%20Inquiry">Be a Sponsor</a></p>
+  </div>
+</section>
+<section class="layout-content-wrapper sub-dark">
+  <div class="layout-content sub-wide">
+    <h3 class="sub_heading">Friends of C&D</h3>
+    <div class="sponsors-tier sub-friends_of">
+      <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'friends', 'order' => 'ASC' ));
+        if (have_posts()) : while (have_posts()) : the_post();
+          include 'partials/sponsor.php'; 
+        endwhile; endif; ?>
+    </div>
   </div>
 </section>
 <div id="organizers" class="waypoint"></div>
