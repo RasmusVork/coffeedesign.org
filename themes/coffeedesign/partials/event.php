@@ -25,7 +25,7 @@ $this_month = date('Y-m');?>
       <?php if($post_date <= $today || $wp_query->current_post == 0) : if(has_post_thumbnail()) : ?>
       <div class="event-content-photo">
         <div style="background-image: url('<?php echo wp_get_attachment_thumb_url( get_post_thumbnail_id( $post->ID ) ); ?>')" class="photo sub-circle">
-          <?php the_post_thumbnail(); ?>
+          <?php the_post_thumbnail('full'); ?>
         </div>
       </div>
       <?php endif; endif;?>

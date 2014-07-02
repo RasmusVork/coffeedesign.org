@@ -1,6 +1,6 @@
 <div class="organizer">
   <div class="organizer-avatar">
-    <div style="background-image: url('<?php echo wp_get_attachment_thumb_url( get_post_thumbnail_id( $post->ID ) ); ?>')" class="photo sub-circle"><?php the_post_thumbnail(); ?></div>
+    <div style="background-image: url('<?php echo wp_get_attachment_thumb_url( get_post_thumbnail_id( $post->ID ) ); ?>')" class="photo sub-circle"><?php the_post_thumbnail('medium'); ?></div>
   </div>
   <div class="organizer-info">
     <p><strong><?php the_title(); ?></strong></p>
