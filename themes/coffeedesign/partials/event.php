@@ -24,8 +24,8 @@ $this_month = date('Y-m');?>
     <div class="event-content-grid">
       <?php if($post_date <= $today || $wp_query->current_post == 0) : if(has_post_thumbnail()) : ?>
       <div class="event-content-photo">
-        <div style="background-image: url('<?php echo wp_get_attachment_thumb_url( get_post_thumbnail_id( $post->ID ), 'medium' ); ?>')" class="photo sub-circle">
-          <?php the_post_thumbnail('full'); ?>
+        <div style="background-image: url('<?php echo wp_get_attachment_thumb_url( get_post_thumbnail_id( $post->ID ) ); ?>')" class="photo sub-circle">
+          <?php the_post_thumbnail(); ?>
         </div>
       </div>
       <?php endif; endif;?>
