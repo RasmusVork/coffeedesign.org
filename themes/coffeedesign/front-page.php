@@ -99,9 +99,10 @@
     <h2>Let's Talk</h2>
     <hr/>
     <div class="links">
-      <div class="link"><a href="mailto:hello@coffeedesign.org" class="icon"><span class="icon-glyph sub-mail"></span><span class="icon-text">hello@coffeedesign.org</span></a></div>
-      <div class="link"><a href="http://twitter.com/kccoffeedesign" class="icon"><span class="icon-glyph sub-twitter"></span><span class="icon-text">@kcCoffeeDesign</span></a></div>
-      <div class="link"><a href="https://www.facebook.com/kcCoffeeDesign" class="icon"><span class="icon-glyph sub-facebook"></span><span class="icon-text">kcCoffeeDesign</span></a></div>
+      <div class="link"><a href="mailto:hello@coffeedesign.org" class="icon"><span class="icon-glyph sub-mail"></span><span class="icon-text">Email</span></a></div>
+      <div class="link"><a href="http://twitter.com/kccoffeedesign" class="icon"><span class="icon-glyph sub-twitter"></span><span class="icon-text">Twitter</span></a></div>
+      <div class="link"><a href="https://www.facebook.com/kcCoffeeDesign" class="icon"><span class="icon-glyph sub-facebook"></span><span class="icon-text">Facebook</span></a></div>
+      <div class="link"><a href="https://www.youtube.com/channel/UCVASnQKD5ItG0LwknkDs0vw" class="icon"><span class="icon-glyph sub-youtube"></span><span class="icon-text">Youtube</span></a></div>
     </div>
     <p>Don't forget to sign up for the newsletter to be the first to know about our events!</p>
     <form id="mc-embedded-subscribe-form" action="http://coffeedesign.us3.list-manage1.com/subscribe/post?u=73a0928dffdd7ea5920f5069c&amp;id=1a612aa5f1" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate" class="validate">
