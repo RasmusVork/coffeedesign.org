@@ -3,7 +3,7 @@
     <div style="background-image: url('<?php echo wp_get_attachment_thumb_url( get_post_thumbnail_id( $post->ID ) ); ?>')" class="photo sub-circle"><?php the_post_thumbnail(); ?></div>
   </div>
   <div class="organizer-info">
-    <h3><?php the_title(); ?></h3>
+    <p><strong><?php the_title(); ?></strong></p>
     <div class="organizer-info-services">
       
       <?php if(get_field("organizer_email")): ?>
