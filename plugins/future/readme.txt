@@ -2,9 +2,9 @@
 Contributors: msudvarg
 Donate link: http://peaceeconomyproject.org/wordpress/?page_id=23
 Tags: msudvarg, future, schedule, scheduled, future posts, scheduled posts, calendar, calendar widget, calendar category, category calendar, events, event posts, future events, event calendar, events calendar
-Requires at least: 3.0
-Tested up to: 3.5.1
-Stable tag: 1.1.2
+Requires at least: 3.6.0
+Tested up to: 3.9.1
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,11 +25,15 @@ The 'Future' plugin allows posts with future scheduled dates to be integrated in
 
 On your page call, add the get variable 'future' and set this to true. For example: "http://example.com/?cat=7&future=true" or "http://example.com/blog/2013/?future=true"
 
+Alternatively (and easier in many cases), in the menu editor, select "Display only future posts" for any category pages in your menu structure.
+
 This displays all future posts in ascending order of date.
 
 = What if I want to display both past and future posts? =
 
 On your page call, set the variable 'future' to all. For example: "http://example.com/?cat=7&future=all" or "http://example.com/blog/2013/?future=all" 
+
+Alternatively (and easier in many cases), in the menu editor, select "Display both past and future posts" for any category pages in your menu structure.
 
 This displays all posts (both published and scheduled) in descending order of date.
 
@@ -42,6 +46,14 @@ This plugin modifies the Wordpress calendar widget so it now has a checkbox to "
 With this plugin, the Wordpress calendar widget also has a dropdown box to select a single category. You can select a category with or without checking the "Include Future Posts" option, and the calendar will limit the posts it shows to this category.
 
 == Changelog ==
+
+= 1.2.1 =
+* Fixed a bug where the displayed calendar widget was reverting back to the Wordpress default calendar widget *
+* Fixed an issue where the controls in the menu editor were displaying on Page menu objects instead of Category menu objects *
+
+= 1.2 =
+* Fixed possible compatibility issues with new versions of Wordpress (now tested up to version 3.9.1)
+* Added controls to display future and all posts to Wordpress's built-in menu editor
 
 = 1.1.2 =
 * Fixed a bug where linked dates in the calendar widget do not have post titles as link titles. Now hovering over dates in the calendar displays the relevant post titles from that day.
@@ -62,6 +74,12 @@ With this plugin, the Wordpress calendar widget also has a dropdown box to selec
 
 == Upgrade Notice ==
 
+= 1.2.1 =
+1.2.1 is an essential upgrade that fixes issues with the menu editor and the calendar in 1.2
+
+= 1.2 =
+1.2 adds compatibility with Wordpress 3.6 - 3.9.1 and adds future post controls to the menu editor.
+
 = 1.1.2 =
 1.1.2 fixes a bug where linked dates in the calendar widget don't have associated post titles as link titles
 
@@ -79,5 +97,6 @@ With this plugin, the Wordpress calendar widget also has a dropdown box to selec
 
 == Screenshots ==
 
-1. New Calendar Widget with Category and "Include Future Posts" Checkbox
-2. This screenshot was taken March 17, 2013. Notice that the April events are displayed and the calendar widget shows only the Events category for April 2013.
+1. Future post control on Wordpress's built-in menu editor
+2. New Calendar Widget with Category and "Include Future Posts" Checkbox
+3. This screenshot was taken March 17, 2013. Notice that the April events are displayed and the calendar widget shows only the Events category for April 2013.
