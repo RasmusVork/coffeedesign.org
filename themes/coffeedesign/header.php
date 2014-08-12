@@ -1,6 +1,5 @@
 <?php include 'partials/head.php' ?>
 
-
 <div class="background"></div>
 
 <div class="layout-header-wrapper">
