@@ -17,7 +17,7 @@ is-width(val)
   else if val && 'unit' == type(val)
     // Stylus does not short circuit so we need to perform this as a distinct
     // operation to prevent errors
-    return '' != unit(val)
+    return '' != unitz(val)
   return false
 
 /*

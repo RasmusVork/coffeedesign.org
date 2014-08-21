@@ -1,0 +1,31 @@
+.contest-form
+  min-width 20em
+  background white
+  color black
+  @extend .pad-3, .nest-4
+  @media max-small
+    min-width 0
+
+  label
+    color black
+    display block
+    float none !important
+    width auto !important
+
+  input
+    float none !important
+    width 100% !important
+
+    &[type=file]
+      background none !important
+      border none !important
+      font-size normal !important
+
+.usp-input-error
+  width auto !important
+  text-align left !important
+  color red
+
+#user-submitted-post
+  @extend .button
+    

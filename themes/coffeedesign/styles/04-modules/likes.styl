@@ -1,8 +1,102 @@
-.likes
-  color red
+.kk-left{
+  float: none !important;
+}
 
-.kklike-content
-  null
-.kklike-button-big-light.kklike-box
-  background none !important
+.kk-right{
+  float: none !important;
+}
 
+.kkclear{
+  display: none !important;
+}
+
+.kklike-rating-none{
+  display: none;
+}
+
+.kklike-msg{
+  display: none !important;
+}
+
+/* ============================================= */
+/* ==========   SZKIELET PRZYCISKU   =========== */
+/* ============================================= */
+.kklike-content{
+  margin: 0 !important;
+}
+
+.kklike-box
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  display: table !important;
+  border-spacing 0.5em
+  float: none !important;
+  font-family: inherit;
+  font-size: 10px;
+  text-decoration: none;
+  color: #666666;
+  box-shadow: 0 0 2px #DDD;
+  line-height: 100%;
+  @extend .v-space-none
+  white-space nowrap
+  > *
+    display table-cell !important
+
+.kklike-box:hover .kklike-value{
+  color: #666666;
+}
+
+.kklike-box:hover .kklike-text{
+  color: #AAAAAA;
+}
+
+@keyframes heart
+  0%
+    transform scale(1)
+  50%
+    transform scale(2)
+  100%
+    transform scale(1)
+
+.kklike-action[value='unlike']
+  ~ .kklike-ico
+    animation heart 0.25s ease-in-out forwards
+    color red
+
+.kklike-ico
+  background: none !important;
+  display: table-cell !important;
+  vertical-align: middle;
+  float: none !important;
+  height: 0 !important;
+  padding: 0 !important;
+  width: 0 !important;
+  font-size 1.5em
+  color #999
+  &:after
+    content '♥'
+
+.kklike-text{
+  display: none !important;
+  vertical-align: middle;
+  float: none !important;
+  padding: 0 !important;
+  white-space nowrap
+}
+
+.kklike-value{
+  border-left: 0 !important;
+  border-right: 0 !important;
+  display: table-cell !important;
+  vertical-align: middle;
+  float: none !important;
+  padding: 0 !important;
+}
+
+.kklike-load{
+  background: url("../images/load.gif") no-repeat scroll center center transparent;
+    text-indent: -9999px;
+    width: 30px;
+    padding-top: 10px;
+}

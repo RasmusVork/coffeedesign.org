@@ -18,7 +18,7 @@
           <div class="col">
             <?php the_author(); ?>
           </div>
-          <div class="col">
+          <div class="col min">
             <div class="likes">
               <?php if(function_exists(kkLikeButton())){kkLikeButton();} ?>
             </div>

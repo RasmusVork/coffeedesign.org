@@ -26,12 +26,16 @@
     &.sub-organizers:before
       background-image url("../images/bg-books.jpg")
 
+  &.sub-translucent
+    background-color rgba(violet, 0.25)
+    color white
+
   &.sub-dark
     background-color darken(gray, 2)
 
 .layout-content
   @extend $padding
-  max-width unit(33.33)
+  max-width unitz(33.33)
   margin 0 auto
 
   text-align center
@@ -40,4 +44,4 @@
     text-align left
 
   &.sub-wide
-    max-width unit(50)
+    max-width unitz(50)
