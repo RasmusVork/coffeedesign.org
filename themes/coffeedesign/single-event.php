@@ -2,9 +2,7 @@
 
 <section class="layout-content-wrapper">
   <div class="layout-content">
-
-  <?php include 'partials/event.php'; ?>
-
+    <?php include 'partials/event.php'; ?>
   </div>
 </div>
   

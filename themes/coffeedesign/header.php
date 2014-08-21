@@ -1,7 +1,6 @@
 <?php include 'partials/head.php' ?>
 
 <div class="background"></div>
-
 <div class="layout-header-wrapper">
   <header class="layout-header">
     <h1 class="site-title">Coffee &amp; Design</h1>
@@ -17,7 +16,6 @@
             'items_wrap'      => '%3$s',
             'depth'           => 0,
           );
-
           echo strip_tags(wp_nav_menu( $menuParameters ), '<a>' ); ?>
       </nav>
     </div>

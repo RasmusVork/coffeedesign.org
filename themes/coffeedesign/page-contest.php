@@ -17,7 +17,6 @@
         <?php endwhile; endif; ?>
       </div>
     </div>
-
   </div>
 </section>
 

@@ -2,10 +2,8 @@
   
 <section class="layout-content-wrapper sub-background">
   <div class="layout-content sub-wide nest-1">
-    
-
     <h2>Contest</h2>
-    <hr/>
+    <hr>
     <?php query_posts(array ( 'category_name' => 'contestants', 'order' => 'ASC' )); ?>
     <div class="grid wrapped spaced">
       <div class="grid-items">
@@ -14,7 +12,6 @@
         <?php endwhile; endif; ?>
       </div>
     </div>
-
   </div>
 </section>
 
