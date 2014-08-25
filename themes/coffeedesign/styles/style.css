@@ -359,7 +359,7 @@ body {
 .button,
 input[type="email"],
 input[type="text"],
-#user-submitted-post {
+.usp-submit {
   -webkit-appearance: none;
   -webkit-transition: -webkit-box-shadow 0.25s ease-in-out;
   transition: box-shadow 0.25s ease-in-out;
@@ -374,25 +374,25 @@ input[type="text"],
   .button,
   input[type="email"],
   input[type="text"],
-  #user-submitted-post,
+  .usp-submit,
 .button,
 input[type="email"],
 input[type="text"],
-#user-submitted-post {
+.usp-submit {
     width: 100%;
   }
 }
 .button:focus,
 input[type="email"]:focus,
 input[type="text"]:focus,
-#user-submitted-post:focus {
+.usp-submit:focus {
   -webkit-box-shadow: inset 0 0 0 2px #2e4599;
   box-shadow: inset 0 0 0 2px #2e4599;
 }
 .button.sub-white,
 input[type="email"].sub-white,
 input[type="text"].sub-white,
-#user-submitted-post.sub-white {
+.usp-submit.sub-white {
   -webkit-box-shadow: inset 0 0 0 2px transparent;
   box-shadow: inset 0 0 0 2px transparent;
   background: rgba(255,255,255,0.25);
@@ -401,14 +401,14 @@ input[type="text"].sub-white,
 .button.sub-white:focus,
 input[type="email"].sub-white:focus,
 input[type="text"].sub-white:focus,
-#user-submitted-post.sub-white:focus {
+.usp-submit.sub-white:focus {
   -webkit-box-shadow: inset 0 0 0 2px;
   box-shadow: inset 0 0 0 2px;
 }
 .button.sub-white::-webkit-input-placeholder,
 input[type="email"].sub-white::-webkit-input-placeholder,
 input[type="text"].sub-white::-webkit-input-placeholder,
-#user-submitted-post.sub-white::-webkit-input-placeholder {
+.usp-submit.sub-white::-webkit-input-placeholder {
   color: rgba(255,255,255,0.5) !important;
 }
 .navigation {
@@ -561,7 +561,7 @@ a {
   color: #444;
 }
 .button,
-#user-submitted-post {
+.usp-submit {
   display: inline-block;
   color: #fff;
   font-weight: 700;
@@ -574,28 +574,28 @@ a {
   cursor: pointer;
 }
 .button:hover,
-#user-submitted-post:hover {
+.usp-submit:hover {
   -webkit-box-shadow: 0 0 0 4px rgba(46,69,153,0.25);
   box-shadow: 0 0 0 4px rgba(46,69,153,0.25);
 }
 .button.sub-white,
-#user-submitted-post.sub-white {
+.usp-submit.sub-white {
   -webkit-box-shadow: inset 0 0 0 2px;
   box-shadow: inset 0 0 0 2px;
   background: transparent;
 }
 .button.sub-outline,
-#user-submitted-post.sub-outline {
+.usp-submit.sub-outline {
   color: #2e4599;
   background: transparent;
   border: 2px solid;
 }
 .button.sub-back,
-#user-submitted-post.sub-back {
+.usp-submit.sub-back {
   color: #444;
 }
 .button.sub-back:hover,
-#user-submitted-post.sub-back:hover {
+.usp-submit.sub-back:hover {
   -webkit-box-shadow: 0 0 0 4px rgba(68,68,68,0.25);
   box-shadow: 0 0 0 4px rgba(68,68,68,0.25);
 }
@@ -1443,6 +1443,9 @@ a:hover {
 .layout-content.sub-wide {
   max-width: 75em;
 }
+.layout-content.sub-narrow {
+  max-width: 60em;
+}
 .contest-form {
   min-width: 20em;
   background: #fff;
@@ -1472,6 +1475,12 @@ a:hover {
   width: auto !important;
   text-align: left !important;
   color: #f99;
+}
+.usp-fieldset {
+  margin-bottom: 0 !important;
+}
+.usp-hidden {
+  display: none !important;
 }
 .layout-events {
   table-layout: auto;
