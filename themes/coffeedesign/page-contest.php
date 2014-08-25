@@ -17,8 +17,14 @@
           <p><em>Artwork Submission Criteria</em></p>
           <ul class="nest-5">
             <li>No larger than 6" wide or 12" tall</li>
+<<<<<<< HEAD
             <li>Single Color</li>
             <li>Provide artwork in vector format (SVG to be precise)</li>
+=======
+            <li>1 Colour only</li>
+            <li>Must provide original artwork in vector form</li>
+            <li>Also provide a display image of 800x800px, black artwork on white background</li>
+>>>>>>> 1564f274cba25b4b4f7655f05232c5cb1bd141bc
           </ul>
         </div>
         <div class="col nest-3">
