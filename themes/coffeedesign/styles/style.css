@@ -1155,6 +1155,10 @@ input[type="submit"] {
   -webkit-background-origin: border;
   background-origin: border-box;
 }
+.photo.sub-contain {
+  -webkit-background-size: contain;
+  background-size: contain;
+}
 .ribbon {
   position: relative;
   z-index: 0;

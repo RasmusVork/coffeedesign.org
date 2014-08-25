@@ -6,7 +6,7 @@
 <div class="block-wrapper">
   <div class="block pad-6">
     <div class="block-photo">
-      <div class="photo" style="background-image: url('<?php echo $image_url[0]; ?>')">
+      <div class="photo sub-contain" style="background-image: url('<?php echo $image_url[0]; ?>')">
         <?php if(has_post_thumbnail()) : ?>
           <?php the_post_thumbnail(); ?>
         <?php endif;?>
