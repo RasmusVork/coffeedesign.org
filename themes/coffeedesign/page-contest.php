@@ -5,7 +5,7 @@
     <div class="grid spaced break-max-small">
       <div class="grid-items">
         <div class="col nest-3">
-          <h2>Contest</h2>
+          <h2>Letterpress Contest</h2>
           <p>In preparation for our upcoming letterpress and screen printing event [link] we wanted to continue to shake things up a bit and put a call out to all of of you awesome Kansas City designers. We're running a three week contest, open to all local designers, to show us an amazing Coffee & Design mark. You have complete creative freedom, it doesn't have to match any brand, it simply must at least say "Coffee & Design." The top two designs will get made into screens and printed on shirts at our September event. So let your creative juices flow and show us what you got!</p>
           <p><em>Contest Details</em></p>
           <ul class="nest-5">

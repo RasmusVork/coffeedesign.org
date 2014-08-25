@@ -365,7 +365,7 @@ input[type="text"],
   transition: box-shadow 0.25s ease-in-out;
   outline: none;
   border: none;
-  padding: 0.6em 1.5em;
+  padding: 0.6em 1em;
   border-radius: 1.5em;
   -webkit-box-shadow: inset 0 0 1px 1px rgba(68,68,68,0.25);
   box-shadow: inset 0 0 1px 1px rgba(68,68,68,0.25);
@@ -1481,6 +1481,11 @@ a:hover {
 }
 .usp-hidden {
   display: none !important;
+}
+.usp-input,
+.usp-textarea {
+  font: 100%/1.5 "Lato", sans-serif;
+  font-size: 1rem !important;
 }
 .layout-events {
   table-layout: auto;
