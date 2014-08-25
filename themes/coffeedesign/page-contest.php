@@ -24,7 +24,7 @@
         </div>
         <div class="col nest-3">
           <div class="contest-form">
-            <h4>Submit your work</h4>
+            <h4>Submit Artwork</h4>
             <?php if (function_exists('display_usp_form')) display_usp_form('letterpress-contest'); ?>
           </div>
         </div>
