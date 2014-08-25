@@ -1,0 +1,13 @@
+nest(1.7, -2)
+
+.grid
+  &.break-max-medium
+    & > .grid-items
+      & > .col
+        @media (max-width: 1024px)
+          display block
+  &.break-max-small
+    & > .grid-items
+      & > .col
+        @media (max-width: 640px)
+          display block

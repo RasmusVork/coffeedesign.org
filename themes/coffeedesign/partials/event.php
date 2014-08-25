@@ -2,7 +2,10 @@
 $post_date  = get_the_date('c');
 $today      = current_time( 'c' );
 $post_month = get_the_date('Y-m');
-$this_month = date('Y-m');?>
+$this_month = date('Y-m');
+$image_id = get_post_thumbnail_id();
+$image_url = wp_get_attachment_image_src($image_id,'large', true);
+?>
 
 <?php if(is_single()) : ?>
   <small><a class="button sub-outline sub-back" href="<?php print $_SERVER['HTTP_REFERER'];?>">⬅ Events</a></small>
@@ -24,7 +27,7 @@ $this_month = date('Y-m');?>
     <div class="event-content-grid">
       <?php if($post_date <= $today || $wp_query->current_post == 0) : if(has_post_thumbnail()) : ?>
       <div class="event-content-photo">
-        <div style="background-image: url('<?php echo wp_get_attachment_thumb_url( get_post_thumbnail_id( $post->ID ) ); ?>')" class="photo sub-circle">
+        <div style="background-image: url('<?php echo $image_url[0]; ?>')" class="photo sub-circle">
           <?php the_post_thumbnail(); ?>
         </div>
       </div>
