@@ -557,7 +557,9 @@ a {
   }
 }
 .block {
-  background: #f5f5f5;
+  -webkit-box-shadow: 0 1px 4px rgba(68,68,68,0.25);
+  box-shadow: 0 1px 4px rgba(68,68,68,0.25);
+  background: #fff;
   color: #444;
 }
 .button,
@@ -1369,6 +1371,15 @@ hr.sub-small {
     font-size: 1.2em;
   }
 }
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}
 @media (max-width: 53em) {
   br.sub-large {
     display: none;
@@ -1392,6 +1403,10 @@ a:hover {
 }
 .large {
   font-size: 1.5em;
+}
+ul {
+  padding: 0;
+  list-style-position: inside;
 }
 .waypoint {
   position: relative;
@@ -1433,6 +1448,10 @@ a:hover {
   background-color: rgba(46,69,153,0.25);
   color: #fff;
 }
+.layout-content-wrapper.sub-translucent a {
+  color: inherit;
+  text-decoration: underline;
+}
 .layout-content-wrapper.sub-dark {
   background-color: #f1f1f1;
 }
@@ -1449,6 +1468,9 @@ a:hover {
 }
 .layout-content.sub-narrow {
   max-width: 60em;
+}
+.layout-content.sub-narrower {
+  max-width: 35em;
 }
 .contest-form {
   min-width: 20em;

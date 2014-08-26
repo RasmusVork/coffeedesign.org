@@ -1,12 +1,18 @@
 <?php get_header(); ?>
-  
+
 <section class="layout-content-wrapper sub-translucent">
   <div class="layout-content sub-narrow sub-align_left sub-wide nest-1">
-    <div class="grid spaced break-max-small">
+    <div class="align-center">
+      <h2>Screen Printing Contest</h2>
+      <hr>
+    </div>
+    <div class="grid auto spaced break-max-small">
       <div class="grid-items">
+
         <div class="col nest-3">
-          <h2>Letterpress Contest</h2>
-          <p>In preparation for our upcoming letterpress and screen printing event [link] we wanted to continue to shake things up a bit and put a call out to all of of you awesome Kansas City designers. We're running a three week contest, open to all local designers, to show us an amazing Coffee & Design mark. You have complete creative freedom, it doesn't have to match any brand, it simply must at least say "Coffee & Design." The top two designs will get made into screens and printed on shirts at our September event. So let your creative juices flow and show us what you got!</p>
+          <p>In preparation for our upcoming letterpress and screen printing <a href="http://kc.coffeedesign.org/events/hands-on-screen-printing-letterpress/">event</a> we wanted to continue to shake things up a bit and put a call out to all of of you awesome Kansas City designers. We're running a contest, open to all local designers, to show us an amazing Coffee & Design mark. You have complete creative freedom, it doesn't have to match any brand, it simply must at least say "Coffee & Design." The top two designs will get made into screens and printed on shirts at our September event. So let your creative juices flow and show us what you got!</p>
+        </div>
+        <div class="col nest-3">
           <p><em>Contest Details</em></p>
           <ul class="nest-5">
             <li>Open for Submissions: August 25th - September 10th</li>
@@ -21,16 +27,18 @@
             <li>Provide artwork in vector format (SVG to be precise)</li>
           </ul>
         </div>
-        <div class="col nest-3">
-          <div class="contest-form">
-            <h4>Submit Artwork</h4>
-            <?php if (function_exists('display_usp_form')) display_usp_form('letterpress-contest'); ?>
-          </div>
-        </div>
       </div>
     </div>
   </div>
 </section>
+<section class="layout-content-wrapper">
+  <div class="layout-content sub-narrower sub-align_left nest-1">
+    <div class="contest-form block">
+      <h4>Submit your artwork</h4>
+      <?php if (function_exists('display_usp_form')) display_usp_form('letterpress-contest'); ?>
+    </div>
+  </div>
+</div>
 <section class="layout-content-wrapper sub-background">
   <div class="layout-content sub-wide sub-align_left nest-2">
     <?php query_posts(array ( 'category_name' => 'contestants', 'order' => 'ASC' )); ?>
