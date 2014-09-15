@@ -5,7 +5,7 @@
  * Plugin URI: http://www.sudvarg.com/wordpress.php
  * Description: The 'Future' plugin allows posts with future scheduled dates to be integrated into a site. This can be useful, for example, with events that have associated dates in the future. Such future posts can, with this plugin, be displayed, both individually and in archive lists. This plugin also adds functionality to the built-in calendar widget. It adds a checkbox to include future posts in the calendar, and it allows the calendar to be configured to show posts from a single category.
  * Author: Marion Sudvarg
- * Version: 1.2.1
+ * Version: 1.2.2
  */
 
 /* The following license information applies to this plugin:
@@ -401,6 +401,20 @@ if ( in_array(@$_GET['future'], array('true','all') ) ) {
         add_filter('get_previous_post_where', 'futurems_get_adjacent_post_all');
     }
 }
+
+
+function futurems_paginate_links($link, $future = null) {
+    if(is_null($future)) $future = $_GET['future'];
+	$future_str = "future=" . $future;
+	$future_pos = strpos($link,$future_str)-1;
+	$future_len = strlen($future_str)+1;
+	$link = substr($link,0,$future_pos) . substr($link,$future_pos+$future_len);
+	$link = futurems_permalink($link, $future);
+	return $link;
+}
+	
+
+add_filter('paginate_links','futurems_paginate_links');
 
 /* Add Future checkboxes to menus */
 
