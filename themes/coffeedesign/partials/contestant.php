@@ -16,7 +16,7 @@
       <div class="grid align-middle">
         <div class="grid-items">
           <div class="col">
-            <?php echo get_post_meta($post->ID, 'user_submit_name', true); ?>
+            <?php the_author(); ?>
           </div>
           <div class="col min">
             <div class="likes">
