@@ -1444,6 +1444,10 @@ ul {
 .layout-content-wrapper.sub-background.sub-organizers:before {
   background-image: url("../images/bg-books.jpg");
 }
+.layout-content-wrapper.sub-background a {
+  color: #fff;
+  text-decoration: underline;
+}
 .layout-content-wrapper.sub-translucent {
   background-color: rgba(46,69,153,0.25);
   color: #fff;

@@ -7,10 +7,11 @@
       <hr>
       <h3>Cast your vote!</h3>
       <hr>
+      <p>The top two winning designs will be screen printed at our <a href='http://kc.coffeedesign.org/events/hands-on-screen-printing-letterpress/'>next event</a>.
     </div>
   </div>
 </section>
-<section class="layout-content-wrapper sub-background">
+<section class="layout-content-wrapper">
   <div class="layout-content sub-wide sub-align_left nest-2">
     <?php query_posts(array ( 'category_name' => 'contestants', 'order' => 'ASC' )); ?>
     <div class="grid wrapped spaced">
