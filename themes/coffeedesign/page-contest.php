@@ -13,7 +13,7 @@
 </section>
 <section class="layout-content-wrapper">
   <div class="layout-content sub-wide sub-align_left nest-2">
-    <?php query_posts(array ( 'category_name' => 'contestants', 'order' => 'ASC' )); ?>
+    <?php query_posts(array ( 'category_name' => 'contestants', 'order' => 'ASC', 'posts_per_page' => '50' )); ?>
     <div class="grid wrapped spaced">
       <div class="grid-items">
         <?php if (have_posts()) : while (have_posts()) : the_post();?>
