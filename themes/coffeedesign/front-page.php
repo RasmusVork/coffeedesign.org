@@ -65,7 +65,7 @@
             include 'partials/sponsor.php'; 
           endwhile; endif; ?>
       </div>
-      <p><a href="mailto:hello@coffeedesign.org?subject=Coffee%20%26%20Design%20—%20Sponsorship%20Inquiry">Be a Sponsor</a></p>
+      <p><a href="mailto:kc@coffeedesign.org?subject=Coffee%20%26%20Design%20—%20Sponsorship%20Inquiry">Be a Sponsor</a></p>
     </div>
   </div>
 </section>
