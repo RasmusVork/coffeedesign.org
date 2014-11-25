@@ -65,7 +65,7 @@
             include 'partials/sponsor.php'; 
           endwhile; endif; ?>
       </div>
-      <p><a href="mailto:hello@coffeedesign.org?subject=Coffee%20%26%20Design%20—%20Sponsorship%20Inquiry">Be a Sponsor</a></p>
+      <p><a href="mailto:kc@coffeedesign.org?subject=Coffee%20%26%20Design%20—%20Sponsorship%20Inquiry">Be a Sponsor</a></p>
     </div>
   </div>
 </section>
@@ -88,8 +88,7 @@
     <p class="sub_heading">The mugs behind the mug.</p>
     <?php query_posts(array ( 'post_type' => 'organizer', 'order' => 'DSC' ));
         if (have_posts()) : while (have_posts()) : the_post(); 
-        include "partials/organizer.php"?>
-        
+        include "partials/organizer.php"?>  
     <?php endwhile; endif; ?>
   </div>
 </section>
@@ -99,7 +98,7 @@
     <h2>Let's Talk</h2>
     <hr/>
     <div class="links">
-      <div class="link"><a href="mailto:hello@coffeedesign.org" class="icon"><span class="icon-glyph sub-mail"></span><span class="icon-text">Email</span></a></div>
+      <div class="link"><a href="mailto:kc@coffeedesign.org" class="icon"><span class="icon-glyph sub-mail"></span><span class="icon-text">Email</span></a></div>
       <div class="link"><a href="http://twitter.com/kccoffeedesign" class="icon"><span class="icon-glyph sub-twitter"></span><span class="icon-text">Twitter</span></a></div>
       <div class="link"><a href="https://www.facebook.com/kcCoffeeDesign" class="icon"><span class="icon-glyph sub-facebook"></span><span class="icon-text">Facebook</span></a></div>
       <div class="link"><a href="https://www.youtube.com/channel/UCVASnQKD5ItG0LwknkDs0vw" class="icon"><span class="icon-glyph sub-youtube"></span><span class="icon-text">Youtube</span></a></div>
