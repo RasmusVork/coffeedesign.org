@@ -3,8 +3,8 @@ Contributors: msudvarg
 Donate link: http://peaceeconomyproject.org/wordpress/?page_id=23
 Tags: msudvarg, future, schedule, scheduled, future posts, scheduled posts, calendar, calendar widget, calendar category, category calendar, events, event posts, future events, event calendar, events calendar
 Requires at least: 3.6.0
-Tested up to: 3.9.1
-Stable tag: 1.2.2
+Tested up to: 4.0
+Stable tag: 1.2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,12 @@ With this plugin, the Wordpress calendar widget also has a dropdown box to selec
 
 == Changelog ==
 
+= 1.2.4 =
+* Addresses issues with editing menus in Wordpress 4.0 *
+
+= 1.2.3 =
+* Fixes an issue with duplicated link titles in the calendar *
+
 = 1.2.2 =
 * Added compatibility with the Wordpress core function "paginate_links"
 
@@ -76,6 +82,12 @@ With this plugin, the Wordpress calendar widget also has a dropdown box to selec
 * 1.0 is the first public release of the Future plugin, after having been developed and tested in its various versions on the Peace Economy Project's website (http://www.peaceeconomyproject.org/).
 
 == Upgrade Notice ==
+
+= 1.2.4 =
+1.2.4 is a critical update that addresses issues with editing menus in Wordpress 4.0
+
+= 1.2.3 =
+1.2.3 fixes an issue with duplicated link titles in the calendar
 
 = 1.2.2 =
 1.2.2 fixes compatibility issues with the Wordpress core function "paginate_links"

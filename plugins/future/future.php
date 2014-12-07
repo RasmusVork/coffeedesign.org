@@ -5,7 +5,7 @@
  * Plugin URI: http://www.sudvarg.com/wordpress.php
  * Description: The 'Future' plugin allows posts with future scheduled dates to be integrated into a site. This can be useful, for example, with events that have associated dates in the future. Such future posts can, with this plugin, be displayed, both individually and in archive lists. This plugin also adds functionality to the built-in calendar widget. It adds a checkbox to include future posts in the calendar, and it allows the calendar to be configured to show posts from a single category.
  * Author: Marion Sudvarg
- * Version: 1.2.2
+ * Version: 1.2.4
  */
 
 /* The following license information applies to this plugin:
@@ -257,7 +257,7 @@ function futurems_get_calendar($initial = true, $echo = true, $category = 0, $fu
 		$ak_title_separator = ', ';
 
 	$ak_titles_for_day = array();
-	$ak_post_titles = $wpdb->get_results("SELECT ID, post_title, DAYOFMONTH(post_date) as dom "
+	$ak_post_titles = $wpdb->get_results("SELECT DISTINCT ID, post_title, DAYOFMONTH(post_date) as dom "
 		."FROM $wpdb->posts " . futurems_single_category_joins($category)
 		."WHERE post_date >= '{$thisyear}-{$thismonth}-01 00:00:00' "
 		."AND post_date <= '{$thisyear}-{$thismonth}-{$last_day} 23:59:59' " . futurems_category_sql($category)
@@ -454,20 +454,45 @@ function future_nav_edit_walker($walker,$menu_id) {
  * @uses Walker_Nav_Menu
  */
 class Walker_Nav_Menu_Edit_Future extends Walker_Nav_Menu  {
+	/**
+	 * Starts the list before the elements are added.
+	 *
+	 * @see Walker_Nav_Menu::start_lvl()
+	 *
+	 * @since 3.0.0
+	 *
+	 * @param string $output Passed by reference.
+	 * @param int    $depth  Depth of menu item. Used for padding.
+	 * @param array  $args   Not used.
+	 */
+	public function start_lvl( &$output, $depth = 0, $args = array() ) {}
 
+	/**
+	 * Ends the list of after the elements are added.
+	 *
+	 * @see Walker_Nav_Menu::end_lvl()
+	 *
+	 * @since 3.0.0
+	 *
+	 * @param string $output Passed by reference.
+	 * @param int    $depth  Depth of menu item. Used for padding.
+	 * @param array  $args   Not used.
+	 */
+	public function end_lvl( &$output, $depth = 0, $args = array() ) {}
 
-/**
- * @see Walker::start_el()
- * @since 3.0.0
- *
- * @param string $output Passed by reference. Used to append additional content.
- * @param object $item Menu item data object.
- * @param int $depth Depth of menu item. Used for padding.
- * @param object $args
- */
- 
- 
-	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+	/**
+	 * Start the element output.
+	 *
+	 * @see Walker_Nav_Menu::start_el()
+	 * @since 3.0.0
+	 *
+	 * @param string $output Passed by reference. Used to append additional content.
+	 * @param object $item   Menu item data object.
+	 * @param int    $depth  Depth of menu item. Used for padding.
+	 * @param array  $args   Not used.
+	 * @param int    $id     Not used.
+	 */
+	public function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 		global $_wp_nav_menu_max_depth;
 		$_wp_nav_menu_max_depth = $depth > $_wp_nav_menu_max_depth ? $depth : $_wp_nav_menu_max_depth;
 
@@ -641,7 +666,7 @@ class Walker_Nav_Menu_Edit_Future extends Walker_Nav_Menu  {
                 * End added field
                 */
                 ?>
-				<p class="field-move hide-if-no-js description description-wide">
+								<p class="field-move hide-if-no-js description description-wide">
 					<label>
 						<span><?php _e( 'Move' ); ?></span>
 						<a href="#" class="menus-move-up"><?php _e( 'Up one' ); ?></a>

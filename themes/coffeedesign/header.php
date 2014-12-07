@@ -1,6 +1,5 @@
 <?php include 'partials/head.php' ?>
 
-<div class="background"></div>
 <div class="layout-header-wrapper">
   <header class="layout-header">
     <h1 class="site-title">Coffee &amp; Design</h1>
