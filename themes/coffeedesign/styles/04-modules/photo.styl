@@ -1,14 +1,30 @@
 .photo
-  display inline-block
+  position relative
+  display block
   width 100%
   background-size cover
   background-position center
   background-repeat no-repeat
+  
+  .xmas &
+    &:before
+      content ''
+      display block
+      position absolute
+      top 0
+      right 0
+      bottom 0
+      left 0
+      background-image linear-gradient(rgba(black, 0.5), 40% rgba(black, 0.15), transparent)
 
   &:after
     content ""
     display block
     padding-top 100%
+    
+  &.sub-christmasList
+    &:after
+      padding-top 56%
 
   img 
     display none

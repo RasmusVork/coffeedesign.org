@@ -13,12 +13,17 @@ h1, h2, h3, h4, h5, h6
 
 h1, h2
   text-transform uppercase
+h3, h4, h5, h6
+  text-transform capitalize
 
 h1.sub-title
   @extend h3
 
 h1.site-title
   display none
+  
+small
+  font-size 0.875em
 
 p
   @extend $vertical_spacing.text
