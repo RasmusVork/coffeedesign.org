@@ -3,7 +3,7 @@
 <section class="layout-content-wrapper sub-background sub-christmas-list">
   <div class="layout-content nest-2">
     <div class="align-center">
-      <h1>A Very Designer Christmas List</h1>
+      <h1>A Very Designer Wish List</h1>
       <p class="sub_heading">Our highly refined list of great things to buy the designer in your life, all for under $1,000,000.</p>
     </div>
   </div>
