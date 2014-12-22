@@ -28,9 +28,27 @@ query_posts(array (
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <?php include "partials/event.php"; ?>
     <?php endwhile; endif; ?>
-    <div class="pagination">
-      <div class="pagination-link sub-older"><?php next_posts_link( 'Older posts' ); ?></div>
-      <div class="pagination-link sub-newer"><?php previous_posts_link( 'Newer posts' ); ?></div>
+    <div class="pagination-wrap">
+      <div class="pagination">
+        <div class="pagination-link sub-newer"><?php previous_posts_link("
+            <div class='button sub-outline'>
+              <div class='icon'>
+                <div class='icon-glyph sub-arrow-left'></div>
+                <div class='icon-text'>Newer Events</div>
+              </div>
+            </div>
+          "); ?></div>
+        <div class="pagination-link sub-older">
+          <?php next_posts_link("
+            <div class='button sub-outline'>
+              <div class='icon'>
+                <div class='icon-text'>Older Events</div>
+                <div class='icon-glyph sub-arrow-right'></div>
+              </div>
+            </div>
+          "); ?>
+        </div>
+      </div>
     </div>
   </div>
 </section>
