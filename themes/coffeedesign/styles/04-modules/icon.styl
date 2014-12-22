@@ -1,11 +1,11 @@
 .icon
   @extend $grid.inline
   border-spacing unitz(0.25) 0
+  vertical-align middle
   margin 0 (- unitz(0.25))
   font-weight 700
   font-style normal
   font-variant normal
-  text-transform none
   text-decoration none !important
   color inherit
 
@@ -17,6 +17,7 @@
     margin-left unitz(0.15)
 
 .icon-glyph
+  text-transform none
   color inherit
   vertical-align middle
 
@@ -35,8 +36,14 @@
     /* Better Font Rendering =========== */
     -webkit-font-smoothing antialiased
     -moz-osx-font-smoothing grayscale
-
   
+  
+  &.sub-arrow-left:before {
+    content: "\e610";
+  }
+  &.sub-arrow-right:before {
+    content: "\e611";
+  }
   &.sub-youtube:before {
     content: "\e600";
   }
@@ -86,7 +93,8 @@
     content: "\e60f";
   }
 
-
 .icon-text
   line-height 1
   vertical-align middle
+  text-decoration none !important
+  

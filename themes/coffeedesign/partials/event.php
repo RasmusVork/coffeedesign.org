@@ -1,4 +1,4 @@
-<?php if (have_posts()) : while (have_posts()) : the_post();
+<?php
 $post_date  = get_the_date('c');
 $today      = current_time( 'c' );
 $post_month = get_the_date('Y-m');
@@ -58,4 +58,3 @@ $image_url = wp_get_attachment_image_src($image_id,'large', true);
     </div>
   </div>
 </div>
-<?php endwhile; endif; ?>
