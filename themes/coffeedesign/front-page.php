@@ -39,7 +39,7 @@
 
         <!-- Title -->
 
-        <h2 class="hero-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <h2 class="hero-title"><a class="hero-title-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
         <hr>
         <p class="hero-date">
@@ -52,10 +52,12 @@
         </p>
         <hr>
 
-        <?php the_excerpt(); ?>
+        <div class="hero-excerpt">
+          <?php the_excerpt(); ?>
+        </div>
 
         <p>
-          <a class="button" href="<?php the_permalink(); ?>">Learn more</a>
+          <a class="button sub-white" href="<?php the_permalink(); ?>">Learn more</a>
         </p>
 
       </div>
