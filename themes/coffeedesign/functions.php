@@ -120,7 +120,7 @@ array( 'hierarchical' => false,
   'add_or_remove_items' => '',
   'choose_from_most_used' => '',
 )
-) ); 
+) );
 }
 
 // Organizer Post Type
@@ -246,6 +246,48 @@ if(function_exists("register_field_group"))
     ),
     'menu_order' => 0,
   ));
+
+
+  # Event Background Image
+
+  register_field_group(array (
+    'id' => 'acf_appearance',
+    'title' => 'Appearance',
+    'fields' => array (
+      array (
+        'key' => 'field_5592257b951cd',
+        'label' => 'Background Image',
+        'name' => 'background_image',
+        'type' => 'image',
+        'required' => 1,
+        'save_format' => 'url',
+        'preview_size' => 'thumbnail',
+        'library' => 'all',
+      ),
+    ),
+    'location' => array (
+      array (
+        array (
+          'param' => 'post_type',
+          'operator' => '==',
+          'value' => 'event',
+          'order_no' => 0,
+          'group_no' => 0,
+        ),
+      ),
+    ),
+    'options' => array (
+      'position' => 'normal',
+      'layout' => 'default',
+      'hide_on_screen' => array (
+      ),
+    ),
+    'menu_order' => 0,
+  ));
+
+
+  # Organizer Links
+
   register_field_group(array (
     'id' => 'acf_organizer-links',
     'title' => 'Organizer Links',
@@ -398,7 +440,7 @@ global $post;
 
 $author = get_post_meta( $post->ID, 'guest-author', true );
 
-if ( $author ) 
+if ( $author )
 $name = $author;
 
 return $name;

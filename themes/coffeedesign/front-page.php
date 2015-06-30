@@ -1,29 +1,68 @@
 <?php get_header(); ?>
 
 <div id="home" class="waypoint"></div>
-<section class="layout-content-wrapper sub-background sub-intro">
-  <div class="layout-content"><img src="<?php bloginfo('template_directory'); ?>/images/icon-coffeedesign.svg" class="logo-large"/>
-    <h1 class="sub-title">Connect. Inspire. Learn. Grow.</h1>
-    <p class="sub_heading">Coffee & Design is a free, monthly event to connect design professionals in Kansas City.</p>
-  </div>
-</section>
 <div id="events" class="waypoint"></div>
-<?php query_posts(array ( 'post_type' => 'event', 'posts_per_page' => 2, 'post_status' => 'future', 'order' => 'ASC' )); ?>
-<section class="layout-content-wrapper">
-  <div class="layout-content sub-wide">
-    <?php if (have_posts()) : ?>
-      <h2>Upcoming Events</h2>
-      <hr/>
-      <p class="sub_heading">A free event, the last Friday of every month, with coffee and breakfast. <br class="sub-large"/>What a way to kick off your morning.</p>
-      <p>
-        <a class="button sub-outline" href="events">See all events</a>
-      </p>
-      <div class="layout-events">
-        <?php while (have_posts()) : the_post(); ?>
-        <?php include "partials/event.php"; ?>
-        <?php endwhile; ?>
+
+
+<?php query_posts(array (
+  'post_type' => 'event',
+  'posts_per_page' => 1,
+  'post_status' => 'future',
+  'order' => 'ASC' )
+); ?>
+
+<?php if (have_posts()) : ?>
+  <?php while (have_posts()) : the_post(); ?>
+  <section class="layout-content-wrapper sub-background sub-hero">
+    <div class="sub-hero-bg" style="background-image: url(<?php the_field('background_image', $term); ?>)"></div>
+    <div class="layout-content sub-wide">
+
+      <div class="hero">
+
+
+        <?php
+        $post_date  = get_the_date('c');
+        $today      = current_time( 'c' );
+        $post_month = get_the_date('Y-m');
+        $this_month = date('Y-m');
+        $image_id = get_post_thumbnail_id();
+        $image_url = wp_get_attachment_image_src($image_id,'large', true);
+        ?>
+
+
+        <!-- Photo -->
+        <?php if(has_post_thumbnail()) : ?>
+          <div class="hero-photo">
+            <div class="photo sub-circle" style="background-image: url('<?php echo $image_url[0]; ?>')"><?php the_post_thumbnail(); ?></div>
+          </div>
+        <?php endif; ?>
+
+        <!-- Title -->
+
+        <h2 class="hero-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+        <p class="hero-date">
+          <strong><?php the_date('l, F j, Y'); ?></strong><br>
+          <?php if(get_field(location_name)) : ?>
+            <a href="http://maps.apple.com/?q=<?php the_field('location_url', $term); ?>">
+              <?php the_field('location_name', $term); ?>
+            </a>
+          <?php endif; ?>
+        </p>
+
+        <p>
+          <a class="button" href="<?php the_permalink(); ?>">Learn more</a>
+        </p>
+
       </div>
-    <?php else : ?>
+
+
+    </div>
+  </section>
+  <?php endwhile; ?>
+<?php else : ?>
+  <section class="layout-content-wrapper">
+    <div class="layout-content sub-wide">
       <h2>Our Latest Event</h2>
       <hr/>
       <p class="sub_heading">A free event, the last Friday of every month, with coffee and breakfast. <br class="sub-large"/>What a way to kick off your morning.</p>
@@ -42,11 +81,14 @@
           <?php include "partials/event.php"; ?>
         <?php endwhile; ?>
       </div>
-    <?php endif; ?>
-  </div>
-</section>
+    </div>
+  </section>
+<?php endif; ?>
+
+
+
 <div id="about" class="waypoint"></div>
-<section class="layout-content-wrapper sub-background sub-about">
+<section class="layout-content-wrapper sub-about">
   <div class="layout-content">
     <h2>About</h2>
     <hr/>
@@ -54,7 +96,7 @@
   </div>
 </section>
 <div id="sponsors" class="waypoint"></div>
-<section class="layout-content-wrapper">
+<section class="layout-content-wrapper sub-background sub-sponsors">
   <div class="layout-content sub-wide">
     <h2>A Huge Thanks</h2>
     <hr/>
@@ -64,28 +106,28 @@
       <div class="sponsors-tier sub-espresso">
         <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'espresso', 'order' => 'ASC' ));
           if (have_posts()) : while (have_posts()) : the_post();
-            include 'partials/sponsor.php'; 
+            include 'partials/sponsor.php';
           endwhile; endif; ?>
       </div>
       <!-- French Press -->
       <div class="sponsors-tier sub-french_press">
         <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'french_press', 'order' => 'ASC' ));
           if (have_posts()) : while (have_posts()) : the_post();
-            include 'partials/sponsor.php'; 
+            include 'partials/sponsor.php';
           endwhile; endif; ?>
       </div>
       <!-- Pour Over -->
       <div class="sponsors-tier sub-pour_over">
         <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'pour_over', 'order' => 'ASC' ));
           if (have_posts()) : while (have_posts()) : the_post();
-            include 'partials/sponsor.php'; 
+            include 'partials/sponsor.php';
           endwhile; endif; ?>
       </div>
       <!-- Home Brew -->
       <div class="sponsors-tier sub-home_brew">
         <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'home_brew', 'order' => 'ASC' ));
           if (have_posts()) : while (have_posts()) : the_post();
-            include 'partials/sponsor.php'; 
+            include 'partials/sponsor.php';
           endwhile; endif; ?>
       </div>
       <p><a href="mailto:kc@coffeedesign.org?subject=Coffee%20%26%20Design%20—%20Sponsorship%20Inquiry">Be a Sponsor</a></p>
@@ -98,7 +140,7 @@
     <div class="sponsors-tier sub-friends_of">
       <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'friends', 'order' => 'ASC' ));
         if (have_posts()) : while (have_posts()) : the_post();
-          include 'partials/sponsor.php'; 
+          include 'partials/sponsor.php';
         endwhile; endif; ?>
     </div>
   </div>
@@ -110,8 +152,8 @@
     <hr/>
     <p class="sub_heading">The mugs behind the mug.</p>
     <?php query_posts(array ( 'post_type' => 'organizer', 'order' => 'DSC' ));
-        if (have_posts()) : while (have_posts()) : the_post(); 
-        include "partials/organizer.php"?>  
+        if (have_posts()) : while (have_posts()) : the_post();
+        include "partials/organizer.php"?>
     <?php endwhile; endif; ?>
   </div>
 </section>

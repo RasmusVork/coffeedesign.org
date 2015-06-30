@@ -7,6 +7,7 @@
     color white
     background-color transparent
     &:before
+    .sub-hero-bg
       content ""
       display block
       position absolute
@@ -19,7 +20,7 @@
       background-repeat no-repeat
       background-position center
 
-    &.sub-intro:before
+    &.sub-sponsors:before
       background-image url("../images/bg-coffee.jpg")
     &.sub-about:before
       background-image url("../images/bg-computer.jpg")
@@ -41,6 +42,14 @@
 
   &.sub-dark
     background-color darken(gray, 2)
+
+  &.sub-hero
+    height calc(100vh - 5em)
+    display table
+    width 100%
+    > *
+      display table-cell
+      vertical-align middle
 
 .layout-content
   @extend $padding
