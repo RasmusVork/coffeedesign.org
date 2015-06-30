@@ -15,7 +15,7 @@
   <?php while (have_posts()) : the_post(); ?>
   <section class="layout-content-wrapper sub-background sub-hero">
     <div class="sub-hero-bg" style="background-image: url(<?php the_field('background_image', $term); ?>)"></div>
-    <div class="layout-content sub-wide">
+    <div class="layout-content">
 
       <div class="hero">
 
@@ -41,6 +41,7 @@
 
         <h2 class="hero-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
+        <hr>
         <p class="hero-date">
           <strong><?php the_date('l, F j, Y'); ?></strong><br>
           <?php if(get_field(location_name)) : ?>
@@ -49,6 +50,9 @@
             </a>
           <?php endif; ?>
         </p>
+        <hr>
+
+        <?php the_excerpt(); ?>
 
         <p>
           <a class="button" href="<?php the_permalink(); ?>">Learn more</a>
