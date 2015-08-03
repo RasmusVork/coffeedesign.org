@@ -33,17 +33,17 @@ $image_url = wp_get_attachment_image_src($image_id,'large', true);
       </div>
       <?php endif; endif;?>
       <div class="event-content-info">
-        
+
           <?php if(! is_single()) : ?>
             <h3 class="event-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
           <?php else : ?>
             <h2><?php the_title(); ?></h2>
           <?php endif; ?>
-        
+
         <p class="event-date">
           <strong><?php the_date('l, F j, Y'); ?></strong><br>
           <?php if(get_field(location_name)) : ?>
-            <a href="http://maps.apple.com/?q=<?php the_field('location_url', $term); ?>">
+            <a class="event-date-location event-date-location" href="http://maps.apple.com/?q=<?php the_field('location_url', $term); ?>">
               <?php the_field('location_name', $term); ?>
             </a>
           <?php endif; ?>

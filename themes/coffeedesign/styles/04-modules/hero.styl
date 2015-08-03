@@ -1,5 +1,5 @@
 .hero
-  max-width 34em
+  max-width 45em
   margin-right auto
   margin-left auto
   color white
@@ -29,3 +29,15 @@
 .hero-excerpt
   margin-top 1em
   font-size 1.25em
+
+.hero-grid
+  border-spacing 4em
+
+  > .col
+    width 50%
+    @media (max-width: 760px)
+      display block
+      width 100%
+      margin-top 2em !important
+    *
+      margin-top 1em

@@ -52,13 +52,21 @@
         </p>
         <hr>
 
-        <div class="hero-excerpt">
-          <?php the_excerpt(); ?>
+        <div class="hero-grid grid fixed">
+          <div class="col">
+            <div class="hero-excerpt">
+              <?php the_excerpt(); ?>
+            </div>
+            <p>
+              <a class="button sub-white" href="<?php the_permalink(); ?>">Learn more</a>
+            </p>
+          </div>
+          <?php if(get_field(secondary_excerpt)) : ?>
+          <div class="col">
+            <?php the_field('secondary_excerpt', $term); ?>
+          </div>
+        <?php endif; ?>
         </div>
-
-        <p>
-          <a class="button sub-white" href="<?php the_permalink(); ?>">Learn more</a>
-        </p>
 
       </div>
 
