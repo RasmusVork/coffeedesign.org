@@ -286,47 +286,6 @@ if(function_exists("register_field_group"))
   ));
 
 
-  // Event Optional Content
-
-	register_field_group(array (
-		'id' => 'acf_optional-content',
-		'title' => 'Optional Content',
-		'fields' => array (
-			array (
-				'key' => 'field_55bec8d0ef9a2',
-				'label' => 'Secondary Excerpt',
-				'name' => 'secondary_excerpt',
-				'type' => 'textarea',
-				'default_value' => '',
-				'placeholder' => '',
-				'maxlength' => '',
-				'rows' => '',
-				'formatting' => 'html',
-			),
-		),
-		'location' => array (
-			array (
-				array (
-					'param' => 'post_type',
-					'operator' => '==',
-					'value' => 'event',
-					'order_no' => 0,
-					'group_no' => 0,
-				),
-			),
-		),
-		'options' => array (
-			'position' => 'normal',
-			'layout' => 'default',
-			'hide_on_screen' => array (
-			),
-		),
-		'menu_order' => 0,
-	));
-
-
-
-
   # Organizer Links
 
   register_field_group(array (
