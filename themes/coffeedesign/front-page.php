@@ -42,7 +42,7 @@
         <h2 class="hero-title"><a class="hero-title-link" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
         <hr>
-        <p class="hero-date">
+        <!-- <p class="hero-date">
           <strong><?php the_date('l, F j, Y'); ?></strong><br>
           <?php if(get_field(location_name)) : ?>
             <a href="http://maps.apple.com/?q=<?php the_field('location_url', $term); ?>">
@@ -50,14 +50,14 @@
             </a>
           <?php endif; ?>
         </p>
-        <hr>
+        <hr> -->
 
         <div class="hero-excerpt">
           <?php the_excerpt(); ?>
-          <p>
+          <!-- <p>
             <a class="button sub-white" href="<?php the_permalink(); ?>">Learn more</a>
           </p>
-        </div>
+        </div> -->
 
       </div>
 
