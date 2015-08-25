@@ -109,28 +109,28 @@
     <div class="sponsors">
       <!-- Espresso -->
       <div class="sponsors-tier sub-espresso">
-        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'espresso', 'order' => 'ASC' ));
+        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'espresso', 'order' => 'ASC', 'posts_per_page' => -1 ));
           if (have_posts()) : while (have_posts()) : the_post();
             include 'partials/sponsor.php';
           endwhile; endif; ?>
       </div>
       <!-- French Press -->
       <div class="sponsors-tier sub-french_press">
-        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'french_press', 'order' => 'ASC' ));
+        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'french_press', 'order' => 'ASC', 'posts_per_page' => -1 ));
           if (have_posts()) : while (have_posts()) : the_post();
             include 'partials/sponsor.php';
           endwhile; endif; ?>
       </div>
       <!-- Pour Over -->
       <div class="sponsors-tier sub-pour_over">
-        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'pour_over', 'order' => 'ASC' ));
+        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'pour_over', 'order' => 'ASC', 'posts_per_page' => -1 ));
           if (have_posts()) : while (have_posts()) : the_post();
             include 'partials/sponsor.php';
           endwhile; endif; ?>
       </div>
       <!-- Home Brew -->
       <div class="sponsors-tier sub-home_brew">
-        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'home_brew', 'order' => 'ASC' ));
+        <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'home_brew', 'order' => 'ASC', 'posts_per_page' => -1 ));
           if (have_posts()) : while (have_posts()) : the_post();
             include 'partials/sponsor.php';
           endwhile; endif; ?>
@@ -143,7 +143,7 @@
   <div class="layout-content sub-wide">
     <small><h3 class="sub_heading">Friends of C&D</h3></small>
     <div class="sponsors-tier sub-friends_of">
-      <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'friends', 'order' => 'ASC' ));
+      <?php query_posts(array ( 'post_type' => 'sponsor', 'tiers' => 'friends', 'order' => 'ASC', 'posts_per_page' => -1 ));
         if (have_posts()) : while (have_posts()) : the_post();
           include 'partials/sponsor.php';
         endwhile; endif; ?>
@@ -156,7 +156,7 @@
     <h2>Organizers</h2>
     <hr/>
     <p class="sub_heading">The mugs behind the mug.</p>
-    <?php query_posts(array ( 'post_type' => 'organizer', 'order' => 'DSC' ));
+    <?php query_posts(array ( 'post_type' => 'organizer', 'order' => 'DSC', 'posts_per_page' => -1 ));
         if (have_posts()) : while (have_posts()) : the_post();
         include "partials/organizer.php"?>
     <?php endwhile; endif; ?>
