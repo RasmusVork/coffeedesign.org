@@ -34,3 +34,39 @@ Message: gzinflate(): data error
 File:    /Users/Rob/Sites/coffeedesign/wp-includes/class-http.php
 Line:    2116
 -------------------------------------------- 
+[Oct 13 2015 13:36:47] ERROR_HANDLER 
+Number:  2
+Message: gzinflate(): data error
+File:    /Users/Rob/Sites/coffeedesign/wp-includes/class-http.php
+Line:    2116
+-------------------------------------------- 
+[Oct 13 2015 13:36:48] ERROR_HANDLER 
+Number:  2
+Message: gzinflate(): data error
+File:    /Users/Rob/Sites/coffeedesign/wp-includes/class-http.php
+Line:    2116
+-------------------------------------------- 
+[Oct 13 2015 13:36:52] ERROR_HANDLER 
+Number:  2
+Message: gzinflate(): data error
+File:    /Users/Rob/Sites/coffeedesign/wp-includes/class-http.php
+Line:    2116
+-------------------------------------------- 
+[Oct 13 2015 13:36:53] ERROR_HANDLER 
+Number:  2
+Message: gzinflate(): data error
+File:    /Users/Rob/Sites/coffeedesign/wp-includes/class-http.php
+Line:    2116
+-------------------------------------------- 
+[Oct 13 2015 13:36:54] ERROR_HANDLER 
+Number:  2
+Message: gzinflate(): data error
+File:    /Users/Rob/Sites/coffeedesign/wp-includes/class-http.php
+Line:    2116
+-------------------------------------------- 
+[Oct 13 2015 13:36:55] ERROR_HANDLER 
+Number:  2
+Message: gzinflate(): data error
+File:    /Users/Rob/Sites/coffeedesign/wp-includes/class-http.php
+Line:    2116
+-------------------------------------------- 

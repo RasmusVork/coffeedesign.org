@@ -152,7 +152,7 @@
 </section>
 <div id="organizers" class="waypoint"></div>
 <section class="layout-content-wrapper sub-background sub-organizers">
-  <div class="layout-content">
+  <div class="layout-content sub-full-width">
     <h2>Organizers</h2>
     <hr/>
     <p class="sub_heading">The mugs behind the mug.</p>
