@@ -65,10 +65,10 @@
       <div class="sponsors">
         <h2>Our Partners</h2>
         <p>We couldn't have gotten this far without our awesome partners. Huge thanks to these folks.</p>
-        <div class="sponsor"><img src="images/crema-logo.svg"></div>
-        <div class="sponsor"><img src="images/sprintaccel-logo.svg"></div>
-        <div class="sponsor"><img src="images/roasterie-logo.svg"></div>
-        <div class="sponsor"><img src="images/40d-logo.svg"></div>
+        <div class="sponsor"><img src="<?php bloginfo('template_directory'); ?>/images/crema-logo.svg"></div>
+        <div class="sponsor"><img src="<?php bloginfo('template_directory'); ?>/images/sprintaccel-logo.svg"></div>
+        <div class="sponsor"><img src="<?php bloginfo('template_directory'); ?>/images/roasterie-logo.svg"></div>
+        <div class="sponsor"><img src="<?php bloginfo('template_directory'); ?>/images/40d-logo.svg"></div>
       </div>
       <div class="footer">
         <div class="footer-left">
