@@ -1,11 +1,12 @@
-<?php /* Template Name: Note */ ?>
+<?php /* Template Name: Note Page */ ?>
 <html>
   <head>
       <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-      <!-- <meta name="viewport" content="initial-scale=1.0"> -->
       <title>Coffee &amp; Design</title>
-      <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/normalize.css" type="text/css"/>
-      <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/note.css" type="text/css"/>
+      <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>note.css" type="text/css" media="screen, projection" />;
+      <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>normalize.css" type="text/css" media="screen, projection" />;
+<?php } ?>
+<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" media="screen, projection" />
   </head>
     <body>
       <header>
@@ -58,27 +59,9 @@
             <div class="link"><a href="mailto:kc@coffeedesign.org" class="icon"><span class="icon-glyph sub-mail"></span><span class="icon-text">Email</span></a></div>
             <div class="link"><a href="http://twitter.com/kccoffeedesign" class="icon"><span class="icon-glyph sub-twitter"></span><span class="icon-text">Twitter</span></a></div>
             <div class="link"><a href="https://www.facebook.com/kcCoffeeDesign" class="icon"><span class="icon-glyph sub-facebook"></span><span class="icon-text">Facebook</span></a></div>
-            <div class="link"><a href="http://instagram.com/kccoffeedesign" class="icon"><span class="icon-glyph sub-instagram"></span><span class="icon-text">Instagram</span></a></div>
+            <div class="link"><a href="https://www.youtube.com/channel/UCVASnQKD5ItG0LwknkDs0vw" class="icon"><span class="icon-glyph sub-youtube"></span><span class="icon-text">Youtube</span></a></div>
           </div>
         </div>
       </div>
-      <div class="sponsors">
-        <h2>Our Partners</h2>
-        <p>We couldn't have gotten this far without our awesome partners. Huge thanks to these folks.</p>
-        <div class="sponsor"><img src="images/crema-logo.svg"></div>
-        <div class="sponsor"><img src="images/sprintaccel-logo.svg"></div>
-        <div class="sponsor"><img src="images/roasterie-logo.svg"></div>
-        <div class="sponsor"><img src="images/40d-logo.svg"></div>
-      </div>
-      <div class="footer">
-        <div class="footer-left">
-          <p>Made with <span class="heart">♥</span> in KC</p>
-        </div>
-        <div class="footer-right">
-          <p>
-            <small>Thanks to <a href="http://getflywheel.com">FlyWheel</a> for hosting us</small>
-          </p>
-      </div>
-    </div>
-  </body>
-</html>
+    </body>
+  </html>
