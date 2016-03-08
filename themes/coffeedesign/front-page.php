@@ -11,6 +11,9 @@
       <header>
         <div class="logo">
         </div>
+        <div class="nav-link">
+          <a href="http://kc.coffeedesign.org/events/">Past Events</a>
+        </div>
       </header>
       <div class="hero">
         <h1>We think it’s time <br/>to make some changes.</h1>

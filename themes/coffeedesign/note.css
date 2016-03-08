@@ -352,6 +352,14 @@ h1 {
   background: url(images/logo.svg) no-repeat;
   background-size: contain; }
 
+.nav-link{
+  float: right;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+.nav-link a{
+  font-weight: 600;
+}
 .hero {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
