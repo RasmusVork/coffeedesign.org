@@ -349,7 +349,7 @@ h1 {
   width: 121px;
   height: 162px;
   margin: 0 auto;
-  background: url(../img/cd-logo.svg) no-repeat;
+  background: url(images/cd-logo.svg) no-repeat;
   background-size: contain; }
 
 .nav-link{
