@@ -9,26 +9,22 @@
   </head>
     <body>
       <header>
-        <div class="logo">
-        </div>
         <div class="nav-link">
           <a href="http://kc.coffeedesign.org/events/">Past Events</a>
         </div>
       </header>
       <div class="hero">
-        <h1>We think it’s time <br/>to make some changes.</h1>
+        <div class="logo">
+        </div>
+        <p>Coffee &amp; Design is a not-for-profit organization set out to inspire, connect, and grow design professionals in Kansas City.</p>
       </div>
       <div class="note">
         <div class="note-txt">
-          <p>For those of you who joined us last week for Finding Your Creative Focus with Shawn Blanc, you’re familiar with the exercises we went through. For those who didn’t, Shawn led us on a small journey of figuring out things that were important to us, setting some goals, and some small wins to achieve those goals. In putting together this workshop, we spent some time with Shawn on shaping it and what we thought would be really valuable for the community. But it struck a chord with us on a personal level, and on an organization level.</p>
-          <p>For a lot of us personally, we’d been thinking a lot about our lives and how we were spending our time. We’d been evaluating what brought us positive energy, what we may be losing passion for, and things that are (re)sparking our interests. So we thought it might also be important for us to really look at what we were doing with C&amp;D, how it lined up with not only our original mission, but where we wanted to go. Three things became really clear as we began planning the workshop with Shawn:</p>
-          <p>1. This was exactly the direction we wanted to go with C&amp;D. We knew we’d been successful with the connection and inspiration aspects of our mission, but we weren’t doing as much with the growth piece as we wanted to be. And to be honest, that’s the one that really excites us and where we find the most value in. How could we create opportunities that not only helped foster community and inspiration, but actually made designers better at their craft and even as people? This workshop with Shawn was absolutely a start.</p>
-          <p>2. The rhythm that we’d been doing with C&amp;D - two hour long morning monthly events - had ultimately created a constraint that didn’t truly allow  for us to dive deep into this focus. We know mornings aren’t accessible for everyone. And while Design On Tap provides an alternative, it’s not the same thing. We know two hours aren’t long enough to create the truly meaningful events we want to. We’d run into going way over time or feeling reluctant to having to cut it off for a handful of events before; and as we were planning this workshop, we cursed ourselves that we had limited time to go through everything we wanted to with Shawn.</p>
-          <p>3. Things had to change. This rhythm wasn’t going to work anymore if we were going to truly commit to this new direction. Quite simply, we needed more time. More time to plan things, more time for events, and more time to build things. If we could change the rhythm then we could change how we do things, and we could start creating more value as an organization that serves the design community. Because that’s what we’re here for. (Because that’s why we’re here?)</p>
-          <p>So if you haven’t caught on yet, things around Coffee &amp; Design are going to be changing. We will no longer be doing “the last Friday morning of every month” events, and instead focus on putting on more unique and interactive events that will take on the shape of whatever’s best for them. Meaning, if it makes sense to be on a Saturday night with a keg then that’s what we’ll do. If it’s a Tuesday morning at a coffeeshop, that’s what we’ll do. If it’s Friday morning from 8-10, that’s what we’ll do. If it means there’s a lull because we’re working on something awesome, that’s what it’ll be. We have a lot of ideas, and we’re really excited about what we can do with the next couple of years. To be honest, it re-instilled a passion in C&amp;D for some of us that had started to burn out.</p>
-          <p>We hope you’re as excited as we are for what’s to come. If you have any thoughts or ideas on how we can be better, tell us because we seriously want to know. If you’re totally freaked out by this or you totally hate it, we want to know that too. And if you pre-marked your calendar for the rest of the year, sorry about that but we’re pretty sure it’s going to be worth it. The best way to keep us with C&amp;D is going to be to sign up for the newsletter and follow us on the socials. We promise that’s the truth and not just a plug ;).</p>
-          <p>Cheers,</p>
-          <p>The C&amp;D Organizers</p>
+          <p>A note from the organizers:</p>
+          <p>A while ago, we announced that we’d been doing some self-reflection on Coffee &amp; Design and what the next phase of C&amp;D looks like. It’s a tall order, and the truth is we’re still trying to figure it out. But what it all comes down to is that C&amp;D exists to help and strengthen the design community. So we’re asking <i>You</i> for your thoughts, to be a part of shaping the future of C&amp;D.</p>
+          <p>Take this survey, or drop us an email or FB message and tell us what you want.</p>
+          <p>Please, with a 🍒 on top.</p>
+          <a class="survey" href="https://coffeedesign.typeform.com/to/vqexCH">Fill Out The Survey</a>
         </div>
       </div>
       <div class="connect">
@@ -40,7 +36,7 @@
           <form id="mc-embedded-subscribe-form" action="http://coffeedesign.us3.list-manage1.com/subscribe/post?u=73a0928dffdd7ea5920f5069c&amp;id=1a612aa5f1" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate" class="validate">
             <div class="form-fields">
               <div class="form-fields-field sub-primary">
-                <input id="mce-EMAIL" type="email" value="" name="EMAIL" placeholder="your@emailadress.com" class="required email"/>
+                <input id="mce-EMAIL" type="email" value="" name="EMAIL" placeholder="your@emailaddress.com" class="required email"/>
               </div>
               <div id="mce-responses" style="display: none;" class="clear">
                 <div id="mce-error-response" style="display: none;" class="response"></div>
@@ -64,14 +60,6 @@
             <div class="link"><a href="http://instagram.com/kccoffeedesign" class="icon"><span class="icon-glyph sub-instagram"></span><span class="icon-text">Instagram</span></a></div>
           </div>
         </div>
-      </div>
-      <div class="sponsors">
-        <h2>Our Partners</h2>
-        <p>We couldn't have gotten this far without our awesome partners. Huge thanks to these folks.</p>
-        <div class="sponsor"><img src="<?php bloginfo('template_directory'); ?>/images/crema-logo.svg"></div>
-        <div class="sponsor"><img src="<?php bloginfo('template_directory'); ?>/images/sprintaccel-logo.svg"></div>
-        <div class="sponsor"><img src="<?php bloginfo('template_directory'); ?>/images/roasterie-logo.svg"></div>
-        <div class="sponsor"><img src="<?php bloginfo('template_directory'); ?>/images/40d-logo.svg"></div>
       </div>
       <div class="footer">
         <div class="footer-left">
