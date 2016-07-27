@@ -336,7 +336,8 @@ header {
   height: 5em;
   width: 100%;
   position: absolute;
-  display: block; }
+  display: block;
+  z-index: 10;}
 
 h1 {
   font-size: 60pt;
