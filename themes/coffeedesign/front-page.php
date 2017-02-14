@@ -20,11 +20,8 @@
       </div>
       <div class="note">
         <div class="note-txt">
-          <p>A note from the organizers:</p>
-          <p>A while ago, we announced that we’d been doing some self-reflection on Coffee &amp; Design and what the next phase of C&amp;D looks like. It’s a tall order, and the truth is we’re still trying to figure it out. But what it all comes down to is that C&amp;D exists to help and strengthen the design community. So we’re asking <i>You</i> for your thoughts, to be a part of shaping the future of C&amp;D.</p>
-          <p>Take this survey, or drop us an email or FB message and tell us what you want.</p>
-          <p>Please, with a 🍒 on top.</p>
-          <a class="survey" href="https://coffeedesign.typeform.com/to/vqexCH">Fill Out The Survey</a>
+          <p>We're working hard on a new site, but in the meantime you can check out our latest event. </p>
+          <a class="survey" href="https://www.eventbrite.com/e/cd-breaking-out-tickets-32032586328">Breaking Out w/ Breakout KC</a>
         </div>
       </div>
       <div class="connect">
