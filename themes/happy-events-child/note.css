@@ -403,6 +403,7 @@ h1 {
     display: block;
     margin-right: 2.35765%;
     width: 65.88078%;
+    text-align: center;
     margin-left: 17.05961%; }
     .note .note-txt:last-child {
       margin-right: 0; }
@@ -438,7 +439,7 @@ h1 {
     height: 4.5em;
     margin: 0 auto;
     padding: .6em 1em;
-    width: 15em;
+    width: 20em;
     line-height: 32pt; }
     .note .survey:hover {
       background: #ffffff;
