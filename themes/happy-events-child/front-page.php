@@ -10,7 +10,6 @@
     <body>
       <header>
         <div class="nav-link">
-          <a href="http://kc.coffeedesign.org/events/">Past Events</a>
         </div>
       </header>
       <div class="hero">
