@@ -20,7 +20,7 @@
             <div class="note">
         <div class="note-txt">
           <p>We're working hard on a new site, but in the meantime you can check out our latest event. </p>
-          <a class="survey" href="https://cd_nailingtheinterview.eventbrite.com/">Nailing the Interview</a>
+          <a class="survey" href="https://hhsike.eventbrite.com/">C&D Happy Hour with Sike!</a>
         </div>
       </div>
       <div class="connect">
