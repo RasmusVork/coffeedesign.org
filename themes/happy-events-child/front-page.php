@@ -20,7 +20,7 @@
             <div class="note">
         <div class="note-txt">
           <p>We're working hard on a new site, but in the meantime you can check out our latest event. </p>
-          <a class="survey" href="https://cd_callahancreek.eventbrite.com">Design on the Rocks w/ Callahan Creek</a>
+          <a class="survey" href="https://cd_callahancreek.eventbrite.com">DOTR w/ Callahan Creek</a>
         </div>
       </div>
       <div class="connect">
