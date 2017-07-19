@@ -19,9 +19,7 @@
       </div>
             <div class="note">
         <div class="note-txt">
-          <p>We're working hard on a new site, but in the meantime you can check out our latest event. </p>
-          <a class="survey" href="https://dropcapdual_july2017.eventbrite.com/?aff=site">Dropcap Dual!</a>
-          <a class="survey" href="https://cd_missioncrawl.eventbrite.com/?aff=website">C&D: Mission Crawl</a>
+          <p>We're working hard on a new site, coming very soon</p>
         </div>
       </div>
       <div class="connect">
