@@ -19,7 +19,8 @@
       </div>
             <div class="note">
         <div class="note-txt">
-          <p>We're working hard on a new site, coming very soon</p>
+          <p>We're working hard on a new site, but in the meantime you can check out our latest event. </p>
+          <a class="survey" href="https://dotr_populous.eventbrite.com/">Design on the Rocks w/ Populous</a>
         </div>
       </div>
       <div class="connect">
