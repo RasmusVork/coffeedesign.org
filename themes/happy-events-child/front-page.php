@@ -20,7 +20,7 @@
             <div class="note">
         <div class="note-txt">
           <p>We're working hard on a new site, but in the meantime you can check out our latest event. </p>
-          <a class="survey" href="https://dotr_populous.eventbrite.com/?aff=website">Design on the Rocks w/ Populous</a>
+          <a class="survey" href="https://www.eventbrite.com/e/cd-behind-the-can-tickets-37368470100?aff=website">C&amp;D: Behind the Can</a>
         </div>
       </div>
       <div class="connect">
